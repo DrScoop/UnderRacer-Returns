@@ -9,7 +9,7 @@
 /// @param hrepeat Amount of horizontal repetitions for the texture.
 /// @param vrepeat Amount of vertical repetitions for the texture.
 /// @returns 
-function d3d_draw_wall(argument0, argument1, argument2, argument3, argument4, argument5, argument6, argument7, argument8) {
+function d3d_draw_wall(argument0, argument1, argument2, argument3, argument4, argument5, argument6, argument7, argument8,argument9) {
 
 	//var ret = global.__d3d;
 	//global.__d3d = false;
@@ -24,6 +24,7 @@ function d3d_draw_wall(argument0, argument1, argument2, argument3, argument4, ar
 	var __tex = argument6;
 	var __hrepeat = argument7;
 	var __vrepeat = argument8;
+	var __tex2 = argument9;
 
 	var __xdiff = __x2 - __x1;
 	var __ydiff = __y2 - __y1;
@@ -42,10 +43,10 @@ function d3d_draw_wall(argument0, argument1, argument2, argument3, argument4, ar
 
 	d3d_primitive_begin_texture(pr_trianglefan, __tex);
 
-	d3d_vertex_normal_texture(__x1, __y1, __z1, __nx, __ny, 0, 0, 0,__tex);
-	d3d_vertex_normal_texture(__x2, __y2, __z1, __nx, __ny, 0, __hrepeat, 0,__tex);
-	d3d_vertex_normal_texture(__x2, __y2, __z2, __nx, __ny, 0, __hrepeat, __vrepeat,__tex);
-	d3d_vertex_normal_texture(__x1, __y1, __z2, __nx, __ny, 0, 0, __vrepeat,__tex);
+	d3d_vertex_normal_texture(__x1, __y1, __z1, __nx, __ny, 0, 0, 0,__tex2);
+	d3d_vertex_normal_texture(__x2, __y2, __z1, __nx, __ny, 0, __hrepeat, 0,__tex2);
+	d3d_vertex_normal_texture(__x2, __y2, __z2, __nx, __ny, 0, __hrepeat, __vrepeat,__tex2);
+	d3d_vertex_normal_texture(__x1, __y1, __z2, __nx, __ny, 0, 0, __vrepeat,__tex2);
 
 	d3d_primitive_end();
 

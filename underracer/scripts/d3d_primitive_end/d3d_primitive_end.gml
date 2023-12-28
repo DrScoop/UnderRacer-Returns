@@ -3,7 +3,6 @@ function d3d_primitive_end() {
 
 	if (global.__d3dPrimKind != -1) {
 
-		
 		vertex_submit( global.__d3dPrimBuffer, global.__d3dPrimKind, global.__d3dPrimTex );
 		vertex_end( global.__d3dPrimBuffer );
 

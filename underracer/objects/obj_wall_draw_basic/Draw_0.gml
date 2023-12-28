@@ -11,7 +11,7 @@ d3d_transform_set_identity();
 d3d_transform_add_translation(0,0,0);
 d3d_transform_add_rotation_z(direction);
 d3d_transform_add_translation(x,y,z);
-d3d_draw_wall(-16,0,ztop+z,16,0,zbottom+z,background_get_texture(tex),hrepeat,vrepeat);
+d3d_draw_wall(-16,0,ztop+z,16,0,zbottom+z,background_get_texture(tex),hrepeat,vrepeat,tex);
 d3d_transform_set_identity();
 }}
 

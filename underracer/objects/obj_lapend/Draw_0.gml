@@ -12,7 +12,7 @@ texture_set_repeat(true);
 d3d_transform_set_identity();
 d3d_transform_add_rotation_z(direction);
 d3d_transform_add_translation(x,y,z);
-d3d_draw_block(-8,-48,128,8,48,0,tex,3,4);
+d3d_draw_block(-8,-48,128,8,48,0,tex,3,4,spr_tex_lapend);
 d3d_transform_set_identity();
 draw_set_color(curcolor);
 draw_set_alpha(curalpha);

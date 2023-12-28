@@ -226,14 +226,14 @@ function scr_kartsettings() {
 
 	if global.dialogue=true{speed=0}
 
-	/*
+	
 	if player=1{global.player1_time=steps global.player1_minutes=minutes global.player1_seconds=seconds global.player1_char=char global.player1_id=id}
 	if player=2{global.player2_time=steps global.player2_minutes=minutes global.player2_seconds=seconds global.player2_char=char global.player2_id=id}
 	if player=3{global.player3_time=steps global.player3_minutes=minutes global.player3_seconds=seconds global.player3_char=char global.player3_id=id}
 	if player=4{global.player4_time=steps global.player4_minutes=minutes global.player4_seconds=seconds global.player4_char=char global.player4_id=id}
 	if player=5{global.player5_time=steps global.player5_minutes=minutes global.player5_seconds=seconds global.player5_char=char global.player5_id=id}
 	if player=6{global.player6_time=steps global.player6_minutes=minutes global.player6_seconds=seconds global.player6_char=char global.player6_id=id}
-	*/
+	
 
 	//Achivement Tracking
 	if bot=false{
