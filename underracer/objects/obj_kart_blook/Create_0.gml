@@ -1,4 +1,7 @@
 //Variables Settings
+// new
+z = 0;
+// end new
 kart_maxspd=6.9
 kart_accel=0.25
 kart_turn=4.75

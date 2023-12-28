@@ -2,6 +2,7 @@
   "FolderOrderSettings": [
     {"name":"Extensions","order":13,"path":"folders/Extensions.yy",},
     {"name":"Fonts","order":7,"path":"folders/Fonts.yy",},
+    {"name":"Music","order":2,"path":"folders/Music.yy",},
     {"name":"Notes","order":12,"path":"folders/Notes.yy",},
     {"name":"Objects","order":10,"path":"folders/Objects.yy",},
     {"name":"campaign","order":21,"path":"folders/Objects/campaign.yy",},
@@ -140,7 +141,6 @@
     {"name":"walls","order":3,"path":"folders/Sprites/walls.yy",},
     {"name":"Tile Sets","order":1,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"Music","order":2,"path":"folders/Music.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_powerup","order":1,"path":"sprites/spr_powerup/spr_powerup.yy",},

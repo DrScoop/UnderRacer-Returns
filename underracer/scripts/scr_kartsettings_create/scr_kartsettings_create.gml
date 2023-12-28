@@ -45,21 +45,21 @@ function scr_kartsettings_create() {
 	skin="None"
 	add_achieve_floweysouls=false
 
-	kart_maxspd_old=kart_maxspd
-	kart_maxspd_half=kart_maxspd/1.25
-	kart_accel_db=kart_accel*1.5
-	kart_accel_old=kart_accel
-	kart_accel_half=kart_accel/1.25
-	kart_maxspd_db=kart_maxspd*1.5
+	kart_maxspd_old=global.char1_obj.kart_maxspd
+	kart_maxspd_half=global.char1_obj.kart_maxspd/1.25
+	kart_accel_db=global.char1_obj.kart_accel*1.5
+	kart_accel_old=global.char1_obj.kart_accel
+	kart_accel_half=global.char1_obj.kart_accel/1.25
+	kart_maxspd_db=global.char1_obj.kart_maxspd*1.5
 	camturn_add=-1
 	camturn_limit=10
 	camadjust=false
 	cam_changedis=false
 
-	mdlspr_right_ref=mdlspr_right
-	mdlspr_left_ref=mdlspr_left
-	mdlspr_down_ref=mdlspr_down
-	mdlspr_up_ref=mdlspr_up
+	mdlspr_right_ref=global.char1_obj.mdlspr_right
+	mdlspr_left_ref=global.char1_obj.mdlspr_left
+	mdlspr_down_ref=global.char1_obj.mdlspr_down
+	mdlspr_up_ref=global.char1_obj.mdlspr_up
 
 	botspd=0
 	// Declare the numeric variables

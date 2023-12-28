@@ -1,22 +1,43 @@
 if global.gamemode="Rally"{z=terrain_get_z(x,y)-64}
 if global.gamemode="Campaign Rally"{z=terrain_get_z(x,y)-64}
 
-if can_target=true{
-if instance_exists(target){
-x=target.x + lengthdir_x(Len, Angle + direction)
-y=target.y + lengthdir_y(Len, Angle + direction)
-if global.gamemode!="Rally"{
-if global.gamemode!="Campaign Rally"{
-if z>1{z=target.z}}}
-speed=target.speed
-friction=target.friction
-direction=target.direction+adddir
-camx=x
-camy=y
-camsin = sin(direction*pi/180);
-camcos = cos(direction*pi/180);
+if can_target=true {
+	if instance_exists(target){
+		x=target.x + lengthdir_x(Len, Angle + direction)
+		y=target.y + lengthdir_y(Len, Angle + direction)
+		if global.gamemode!="Rally"{
+			if global.gamemode!="Campaign Rally"{
+				if z>1{z=target.z}
+			}
+		}
+		speed=target.speed
+		friction=target.friction
+		direction=target.direction+adddir
+		camx=x
+		camy=y
+		camsin = sin(direction*pi/180);
+		camcos = cos(direction*pi/180);
+	}
+// begin new
+} else {
+	if instance_exists(target){
+		x=target.x + lengthdir_x(Len, Angle + direction)
+		y=target.y + lengthdir_y(Len, Angle + direction)
+		if global.gamemode!="Rally"{
+			if global.gamemode!="Campaign Rally"{
+				if z>1{z=target.z}
+			}
+		}
+		speed=target.speed
+		friction=target.friction
+		direction=target.direction+adddir
+		camx=x
+		camy=y
+		camsin = sin(direction*pi/180);
+		camcos = cos(direction*pi/180);
+	}
 }
-}
+// end new
 
 scr_wincampos()
 

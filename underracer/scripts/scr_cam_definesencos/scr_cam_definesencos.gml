@@ -54,8 +54,8 @@ function scr_cam_definesencos() {
             cam = cam_obj;
 
             // Check conditions before calling scr_sprite_model
-            if (!stun && !change_sprite) {
-                scr_sprite_model(mdlspr_right, mdlspr_up, mdlspr_left, mdlspr_down, cam);
+            if (!stun && !global.char1_obj.change_sprite) {
+                scr_sprite_model(global.char1_obj.mdlspr_right, global.char1_obj.mdlspr_up, global.char1_obj.mdlspr_left, global.char1_obj.mdlspr_down, cam);
             }
         }
     }

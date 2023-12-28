@@ -1,4 +1,7 @@
 //Variables Settings
+// new
+z = 0;
+// end new
 kart_maxspd=6.9
 kart_accel=0.25
 kart_turn=4.75
@@ -13,8 +16,8 @@ mdlspr_defeat=spr_kflowey_defeat
 mdlspr_down_look=spr_kflowey_lookd
 char="Flowey"
 kartwidth=5
-kartheight=10/*+z*/
-kartbottom=0/*+z*/
+kartheight=10+z
+kartbottom=0+z
 scr_kartsettings_create()
 
 action_set_alarm(1, 0);

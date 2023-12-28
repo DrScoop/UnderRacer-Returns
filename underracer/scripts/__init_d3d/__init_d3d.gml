@@ -7,6 +7,7 @@ function __init_d3d() {
 	global.__d3dPrimKind = -1;
 	global.__d3dPrimTex = -1;
 	global.__d3dPrimBuffer=vertex_create_buffer();
+	// the below global did not exist. for some reason, the vertex format was not globalized.
 	vertex_format_begin();
 		vertex_format_add_position_3d();
 		vertex_format_add_normal();
