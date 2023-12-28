@@ -1,0 +1,2 @@
+sprite_index=spr_dlg_hfrisk_happy
+

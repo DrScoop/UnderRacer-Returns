@@ -1,0 +1,1 @@
+action_another_room(rm_globalstart_escbutton);

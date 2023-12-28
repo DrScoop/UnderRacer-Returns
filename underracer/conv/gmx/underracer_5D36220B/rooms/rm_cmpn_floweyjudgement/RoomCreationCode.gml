@@ -1,0 +1,1 @@
+global.roomname="Flowey's Judgement"

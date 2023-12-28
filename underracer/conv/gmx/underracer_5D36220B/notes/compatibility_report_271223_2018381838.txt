@@ -1,0 +1,213 @@
+Converting GML script: C:\Users\Zeke\Documents\GameMakerStudio2\underracer\conv\gmx\underracer_5D36220B\scripts\scr_load_sounds\scr_load_sounds.gml
+String not found: ConversionLog_ConvertedString 1 "sounds\" "sounds\\"
+
+Converting GML script: C:\Users\Zeke\Documents\GameMakerStudio2\underracer\conv\gmx\underracer_5D36220B\scripts\scr_textdraw\scr_textdraw.gml
+String not found: ConversionLog_ConvertedString 17 "\" "\\"
+
+GameMaker Studio 1 font texture has been backed up at C:\Users\Zeke\Documents\GameMakerStudio2\underracer\conv\gmx\underracer_5D36220B\fonts\fnt_hud\fnt_hud.gms1.png
+GameMaker Studio 1 font texture has been backed up at C:\Users\Zeke\Documents\GameMakerStudio2\underracer\conv\gmx\underracer_5D36220B\fonts\fnt_hud_big\fnt_hud_big.gms1.png
+GameMaker Studio 1 font texture has been backed up at C:\Users\Zeke\Documents\GameMakerStudio2\underracer\conv\gmx\underracer_5D36220B\fonts\fnt_sans\fnt_sans.gms1.png
+GameMaker Studio 1 font texture has been backed up at C:\Users\Zeke\Documents\GameMakerStudio2\underracer\conv\gmx\underracer_5D36220B\fonts\fnt_papyrus\fnt_papyrus.gms1.png
+Converting GML script: C:\Users\Zeke\Documents\GameMakerStudio2\underracer\conv\gmx\underracer_5D36220B\objects\obj_roomcontrol\Alarm_0.gml
+Converted builtin - line 6: view_wview[0]=640 -> __view_set( e__VW.WView, 0, 640 )
+Converted builtin - line 13: view_wview[1]=640 -> __view_set( e__VW.WView, 1, 640 )
+Converted builtin - line 7: view_hview[0]=240 -> __view_set( e__VW.HView, 0, 240 )
+Converted builtin - line 14: view_hview[1]=240 -> __view_set( e__VW.HView, 1, 240 )
+Converted builtin - line 3: view_visible[0] = true -> __view_set( e__VW.Visible, 0, true )
+Converted builtin - line 9: view_visible[1] = true -> __view_set( e__VW.Visible, 1, true )
+Converted builtin - line 10: view_yport[1]=240 -> __view_set( e__VW.YPort, 1, 240 )
+Converted builtin - line 4: view_wport[0]=640 -> __view_set( e__VW.WPort, 0, 640 )
+Converted builtin - line 11: view_wport[1]=640 -> __view_set( e__VW.WPort, 1, 640 )
+Converted builtin - line 5: view_hport[0]=240 -> __view_set( e__VW.HPort, 0, 240 )
+Converted builtin - line 12: view_hport[1]=240 -> __view_set( e__VW.HPort, 1, 240 )
+
+Converting GML script: C:\Users\Zeke\Documents\GameMakerStudio2\underracer\conv\gmx\underracer_5D36220B\objects\obj_rmcontrol_campaign\Create_0.gml
+Converted builtin - line 12: background_color -> __background_get_colour( )
+
+Converting GML script: C:\Users\Zeke\Documents\GameMakerStudio2\underracer\conv\gmx\underracer_5D36220B\objects\obj_cam1\Draw_0.gml
+Converted builtin - line 4: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 4: view_hview[0] -> __view_get( e__VW.HView, 0 )
+
+Converting GML script: C:\Users\Zeke\Documents\GameMakerStudio2\underracer\conv\gmx\underracer_5D36220B\objects\obj_cam2\Draw_0.gml
+Converted builtin - line 4: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 4: view_hview[0] -> __view_get( e__VW.HView, 0 )
+
+Converting GML script: C:\Users\Zeke\Documents\GameMakerStudio2\underracer\conv\gmx\underracer_5D36220B\objects\obj_savepoint\Draw_0.gml
+String not found: ConversionLog_ConvertedString 51 'T' "T"
+
+Converting GML script: C:\Users\Zeke\Documents\GameMakerStudio2\underracer\conv\gmx\underracer_5D36220B\objects\obj_jumppad\Create_0.gml
+String not found: ConversionLog_ConvertedString 56 "textures\wood1.bmp" "textures\\wood1.bmp"
+
+Converting GML script: C:\Users\Zeke\Documents\GameMakerStudio2\underracer\conv\gmx\underracer_5D36220B\objects\obj_jumppad\Draw_0.gml
+String not found: ConversionLog_ConvertedString 20 'T' "T"
+String not found: ConversionLog_ConvertedString 116 'T' "T"
+
+Converting GML script: C:\Users\Zeke\Documents\GameMakerStudio2\underracer\conv\gmx\underracer_5D36220B\objects\obj_watergate\Create_0.gml
+String not found: ConversionLog_ConvertedString 56 "textures\wood1.bmp" "textures\\wood1.bmp"
+String not found: ConversionLog_ConvertedString 105 "textures\wood1.bmp" "textures\\wood1.bmp"
+
+Converting GML script: C:\Users\Zeke\Documents\GameMakerStudio2\underracer\conv\gmx\underracer_5D36220B\objects\obj_watergate\Draw_0.gml
+String not found: ConversionLog_ConvertedString 20 'T' "T"
+
+Converting GML script: C:\Users\Zeke\Documents\GameMakerStudio2\underracer\conv\gmx\underracer_5D36220B\objects\obj_dlg_introflowey\Alarm_0.gml
+String not found: ConversionLog_ConvertedString 8 "\W*Howdy! I'm \YFLOWEY\W!&*\YFLOWEY\W the \YFLOWER\W!/" "\\W*Howdy! I'm \\YFLOWEY\\W!&*\\YFLOWEY\\W the \\YFLOWER\\W!/"
+String not found: ConversionLog_ConvertedString 18 "\W*Hmmm...&*You're new to&the \YRACING CIRCUIT\W,&aren'tcha?\W/" "\\W*Hmmm...&*You're new to&the \\YRACING CIRCUIT\\W,&aren'tcha?\\W/"
+
+Converting GML script: C:\Users\Zeke\Documents\GameMakerStudio2\underracer\conv\gmx\underracer_5D36220B\objects\obj_dlg_floweyracetut\Alarm_0.gml
+String not found: ConversionLog_ConvertedString 8 "\W*This is a \YKART\W.&It's your main means&of transportation&and your \RWEAPON\W./" "\\W*This is a \\YKART\\W.&It's your main means&of transportation&and your \\RWEAPON\\W./"
+String not found: ConversionLog_ConvertedString 18 "\W*How does it work?&*Easy! \YSOUL POWER\W!/" "\\W*How does it work?&*Easy! \\YSOUL POWER\\W!/"
+String not found: ConversionLog_ConvertedString 50 "\W*But there's one golden&rule, you use them&by pressing \Y" "\\W*But there's one golden&rule, you use them&by pressing \\Y"
+String not found: ConversionLog_ConvertedString 50 "\W./" "\\W./"
+String not found: ConversionLog_ConvertedString 61 "\W*Also, you can use&\BSPECIAL ATTACKS\W with the&power of \BMAGIC\W!" "\\W*Also, you can use&\\BSPECIAL ATTACKS\\W with the&power of \\BMAGIC\\W!"
+String not found: ConversionLog_ConvertedString 82 "\W*...Hey, how about a&*\YQUICK RACE\W?&*Just follow me!/" "\\W*...Hey, how about a&*\\YQUICK RACE\\W?&*Just follow me!/"
+
+Converting GML script: C:\Users\Zeke\Documents\GameMakerStudio2\underracer\conv\gmx\underracer_5D36220B\objects\obj_dlg_tori_intro\Alarm_0.gml
+String not found: ConversionLog_ConvertedString 18 "\W*Ah, do not be afraid.&*I am \BTORIEL\W, caretaker&of the \RRUINS.\W/" "\\W*Ah, do not be afraid.&*I am \\BTORIEL\\W, caretaker&of the \\RRUINS.\\W/"
+
+Converting GML script: C:\Users\Zeke\Documents\GameMakerStudio2\underracer\conv\gmx\underracer_5D36220B\objects\obj_dlg_floweyjudgement\Alarm_0.gml
+String not found: ConversionLog_ConvertedString 119 "\R*YOU'LL JUST END UP&LIKE THE OTHERS.\W/" "\\R*YOU'LL JUST END UP&LIKE THE OTHERS.\\W/"
+
+Converting GML script: C:\Users\Zeke\Documents\GameMakerStudio2\underracer\conv\gmx\underracer_5D36220B\objects\obj_dlg_floweyjudgement_end\Alarm_0.gml
+String not found: ConversionLog_ConvertedString 35 "\W*IT TAKES A LOT OF&\RDETERMINATION\W TO SAVE&SOMETHING YOU&DON'T KNOW./" "\\W*IT TAKES A LOT OF&\\RDETERMINATION\\W TO SAVE&SOMETHING YOU&DON'T KNOW./"
+
+Converting GML script: C:\Users\Zeke\Documents\GameMakerStudio2\underracer\conv\gmx\underracer_5D36220B\objects\obj_dlg_sanspap1\Alarm_0.gml
+String not found: ConversionLog_ConvertedString 309 "*\Ytire\W-d." "*\\Ytire\\W-d."
+String not found: ConversionLog_ConvertedString 397 "*\Yrun outta gas." "*\\Yrun outta gas."
+String not found: ConversionLog_ConvertedString 452 "\W*OVER\YDRIVE\W!!!" "\\W*OVER\\YDRIVE\\W!!!"
+
+Converting GML script: C:\Users\Zeke\Documents\GameMakerStudio2\underracer\conv\gmx\underracer_5D36220B\objects\obj_writer\Alarm_0.gml
+String not found: ConversionLog_ConvertedString 14 "\" "\\"
+String not found: ConversionLog_ConvertedString 15 "\" "\\"
+String not found: ConversionLog_ConvertedString 23 "\" "\\"
+
+Missing audiogroup for sound: 'snd_slct' - setting to default audio group
+Missing audiogroup for sound: 'snd_slct_papy' - setting to default audio group
+Missing audiogroup for sound: 'snd_slct_undyne' - setting to default audio group
+Missing audiogroup for sound: 'snd_slct_mtt' - setting to default audio group
+Missing audiogroup for sound: 'snd_slct_alphys' - setting to default audio group
+Missing audiogroup for sound: 'snd_slct_asgore' - setting to default audio group
+Missing audiogroup for sound: 'snd_slct_chara' - setting to default audio group
+Missing audiogroup for sound: 'snd_slct_toriel' - setting to default audio group
+Missing audiogroup for sound: 'snd_slct_sans' - setting to default audio group
+Missing audiogroup for sound: 'snd_slct_flowey' - setting to default audio group
+Missing audiogroup for sound: 'snd_slct_gaster' - setting to default audio group
+Missing audiogroup for sound: 'snd_slct_asriel' - setting to default audio group
+Missing audiogroup for sound: 'snd_slct_muffet' - setting to default audio group
+Missing audiogroup for sound: 'snd_powerup' - setting to default audio group
+Missing audiogroup for sound: 'snd_powerup_spikes' - setting to default audio group
+Missing audiogroup for sound: 'snd_powerup_bone' - setting to default audio group
+Missing audiogroup for sound: 'snd_powerup_gb' - setting to default audio group
+Missing audiogroup for sound: 'snd_powerup_spaghetti' - setting to default audio group
+Missing audiogroup for sound: 'snd_powerup_jetpack' - setting to default audio group
+Missing audiogroup for sound: 'snd_powerup_spear' - setting to default audio group
+Missing audiogroup for sound: 'snd_text' - setting to default audio group
+Missing audiogroup for sound: 'snd_talk_flowey' - setting to default audio group
+Missing audiogroup for sound: 'snd_talk_flowey_evil' - setting to default audio group
+Missing audiogroup for sound: 'snd_talk_tori' - setting to default audio group
+Missing audiogroup for sound: 'snd_talk_hfrisk' - setting to default audio group
+Missing audiogroup for sound: 'snd_talk_cfrisk' - setting to default audio group
+Missing audiogroup for sound: 'snd_talk_sans' - setting to default audio group
+Missing audiogroup for sound: 'snd_talk_papyrus' - setting to default audio group
+Missing audiogroup for sound: 'snd_none' - setting to default audio group
+Missing audiogroup for sound: 'snd_fade' - setting to default audio group
+Missing audiogroup for sound: 'snd_toritheme' - setting to default audio group
+Missing audiogroup for sound: 'snd_dogerror' - setting to default audio group
+Missing audiogroup for sound: 'snd_midi_ruins' - setting to default audio group
+Missing audiogroup for sound: 'snd_gasterfade' - setting to default audio group
+Missing audiogroup for sound: 'snd_squeak' - setting to default audio group
+Missing audiogroup for sound: 'snd_stun' - setting to default audio group
+Missing audiogroup for sound: 'snd_spike' - setting to default audio group
+Missing audiogroup for sound: 'snd_hit_quiet' - setting to default audio group
+Missing audiogroup for sound: 'snd_lapcomplete' - setting to default audio group
+Missing audiogroup for sound: 'snd_racestart' - setting to default audio group
+Missing audiogroup for sound: 'snd_click' - setting to default audio group
+Missing audiogroup for sound: 'snd_error' - setting to default audio group
+Missing audiogroup for sound: 'snd_ready' - setting to default audio group
+Missing audiogroup for sound: 'snd_hit' - setting to default audio group
+Missing audiogroup for sound: 'snd_gblast' - setting to default audio group
+Missing audiogroup for sound: 'snd_fall' - setting to default audio group
+Missing audiogroup for sound: 'snd_engine' - setting to default audio group
+Missing audiogroup for sound: 'snd_achievement' - setting to default audio group
+Missing audiogroup for sound: 'snd_inception' - setting to default audio group
+Missing audiogroup for sound: 'snd_flowey_laugh' - setting to default audio group
+Missing audiogroup for sound: 'snd_magic' - setting to default audio group
+Missing audiogroup for sound: 'snd_magicdrop' - setting to default audio group
+Missing audiogroup for sound: 'snd_hacking' - setting to default audio group
+Missing audiogroup for sound: 'snd_hacker_laugh' - setting to default audio group
+Missing audiogroup for sound: 'snd_battlestart' - setting to default audio group
+Missing audiogroup for sound: 'snd_save' - setting to default audio group
+Missing audiogroup for sound: 'snd_glamburger' - setting to default audio group
+Missing audiogroup for sound: 'snd_honk' - setting to default audio group
+Missing audiogroup for sound: 'snd_whoopee' - setting to default audio group
+Missing audiogroup for sound: 'snd_jumppad' - setting to default audio group
+Missing audiogroup for sound: 'snd_ohyeah' - setting to default audio group
+Missing audiogroup for sound: 'snd_mttugh' - setting to default audio group
+Game speed set to 30
+Added compatibility script 'action\action_another_room.gml'
+Added compatibility script 'action\action_create_object.gml'
+Added compatibility script 'action\action_end_game.gml'
+Added compatibility script 'action\action_if_variable.gml'
+Added compatibility script 'action\action_kill_object.gml'
+Added compatibility script 'action\action_move_start.gml'
+Added compatibility script 'action\action_next_room.gml'
+Added compatibility script 'action\action_set_alarm.gml'
+Added compatibility script 'action\action_set_cursor.gml'
+Added compatibility script 'action\action_timeline_set.gml'
+Added compatibility script 'action\action_timeline_stop.gml'
+Added compatibility script 'background\background_get_texture.gml'
+Added compatibility script 'background\__background_get_colour.gml'
+Added compatibility script 'background\__background_get_colour_element.gml'
+Added compatibility script 'background\__background_set_element.gml'
+Added compatibility script 'd3d\d3d_draw_block.gml'
+Added compatibility script 'd3d\d3d_draw_cone.gml'
+Added compatibility script 'd3d\d3d_draw_cylinder.gml'
+Added compatibility script 'd3d\d3d_draw_ellipsoid.gml'
+Added compatibility script 'd3d\d3d_draw_wall.gml'
+Added compatibility script 'd3d\d3d_end.gml'
+Added compatibility script 'd3d\d3d_light_define_direction.gml'
+Added compatibility script 'd3d\d3d_light_enable.gml'
+Added compatibility script 'd3d\d3d_model_create.gml'
+Added compatibility script 'd3d\d3d_model_draw.gml'
+Added compatibility script 'd3d\d3d_model_primitive_begin.gml'
+Added compatibility script 'd3d\d3d_model_primitive_end.gml'
+Added compatibility script 'd3d\d3d_model_vertex_normal_texture.gml'
+Added compatibility script 'd3d\d3d_primitive_begin_texture.gml'
+Added compatibility script 'd3d\d3d_primitive_end.gml'
+Added compatibility script 'd3d\d3d_set_culling.gml'
+Added compatibility script 'd3d\d3d_set_fog.gml'
+Added compatibility script 'd3d\d3d_set_hidden.gml'
+Added compatibility script 'd3d\d3d_set_lighting.gml'
+Added compatibility script 'd3d\d3d_set_perspective.gml'
+Added compatibility script 'd3d\d3d_set_projection_ext.gml'
+Added compatibility script 'd3d\d3d_set_projection_ortho.gml'
+Added compatibility script 'd3d\d3d_set_shading.gml'
+Added compatibility script 'd3d\d3d_start.gml'
+Added compatibility script 'd3d\d3d_transform_add_rotation_x.gml'
+Added compatibility script 'd3d\d3d_transform_add_rotation_y.gml'
+Added compatibility script 'd3d\d3d_transform_add_rotation_z.gml'
+Added compatibility script 'd3d\d3d_transform_add_translation.gml'
+Added compatibility script 'd3d\d3d_transform_set_identity.gml'
+Added compatibility script 'd3d\d3d_vertex_normal_texture.gml'
+Added compatibility script 'd3d\__d3d_model_add_vertex.gml'
+Added compatibility script 'draw\draw_set_blend_mode.gml'
+Added compatibility script 'draw\draw_set_blend_mode_ext.gml'
+Added compatibility script 'instance\instance_create.gml'
+Added compatibility script 'object\object_get_depth.gml'
+Added compatibility script 'sound\sound_add.gml'
+Added compatibility script 'sound\sound_isplaying.gml'
+Added compatibility script 'sound\sound_loop.gml'
+Added compatibility script 'sound\sound_play.gml'
+Added compatibility script 'sound\sound_stop.gml'
+Added compatibility script 'sound\sound_stop_all.gml'
+Added compatibility script 'sound\sound_volume.gml'
+Added compatibility script 'texture\texture_set_interpolation.gml'
+Added compatibility script 'texture\texture_set_repeat.gml'
+Added compatibility script 'view\__view_get.gml'
+Added compatibility script 'view\__view_set.gml'
+Added compatibility script 'view\__view_set_internal.gml'
+Added compatibility script 'action\__init_action.gml'
+Added compatibility script 'background\__init_background.gml'
+Added compatibility script 'd3d\__init_d3d.gml'
+Added compatibility script 'view\__init_view.gml'
+Added compatibility script '__init_global.gml'
+Added compatibility script '__global_object_depths.gml'

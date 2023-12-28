@@ -1,0 +1,11 @@
+draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,c_white,image_alpha)
+draw_set_font(fnt_hud)
+draw_set_color(c_white)
+draw_text(x,y+136,string_hash_to_newline("Accel: "+string(chr(global.control_pl2move_kb))))
+draw_text(x,y+136+16,string_hash_to_newline("Break: "+string(chr(global.control_pl2break_kb))))
+draw_text(x,y+136+32,string_hash_to_newline("Right: "+string(chr(global.control_pl2right_kb))))
+draw_text(x,y+136+48,string_hash_to_newline("Left: "+string(chr(global.control_pl2left_kb))))
+draw_text(x,y+136+64,string_hash_to_newline("Powerup: "+string(chr(global.control_pl2use_kb))))
+draw_text(x,y+136+80,string_hash_to_newline("Attack: "+string(chr(global.control_pl2special_kb))))
+draw_text(x,y+136+96,string_hash_to_newline("Rearview: "+string(chr(global.control_pl2cam_kb))))
+

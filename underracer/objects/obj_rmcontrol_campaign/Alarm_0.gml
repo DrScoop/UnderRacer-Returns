@@ -1,0 +1,2 @@
+global.racestart=false
+

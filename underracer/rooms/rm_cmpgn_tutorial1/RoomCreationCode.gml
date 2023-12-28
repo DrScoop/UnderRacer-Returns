@@ -1,0 +1,1 @@
+global.roomname="Dark room"
