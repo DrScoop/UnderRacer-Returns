@@ -12,12 +12,7 @@ var tex,curcolor,curalpha;
 curcolor = draw_get_color();
 curalpha = draw_get_alpha();
 // shape 1
-//tex = background_get_texture(tex_shape_1);
-tex = tex_shape_1
-// Example: Load a sprite and add it to the lookup table
-var textureIndex = sprite_get_texture(tex, 0);
-global.spriteTextureLookup[? tex] = textureIndex;
-
+tex = background_get_texture(tex_shape_1);
 draw_set_color(c_white);
 draw_set_alpha(1);
 d3d_transform_set_identity();
@@ -27,18 +22,13 @@ d3d_transform_add_translation(x,y,z+8);
 d3d_draw_wall(-8,0,16,8,0,0,tex,1,1,tex_shape_1);
 d3d_transform_set_identity();
 // shape 2
-//tex = background_get_texture(tex_shape_2);
-tex = tex_shape_2
-// Example: Load a sprite and add it to the lookup table
-textureIndex = sprite_get_texture(tex, 0);
-global.spriteTextureLookup[? tex] = textureIndex;
-
+tex = background_get_texture(tex_shape_2);
 draw_set_color(c_white);
 draw_set_alpha(1);
 d3d_transform_set_identity();
 d3d_transform_add_rotation_z(direction+90);
 d3d_transform_add_translation(x,y,z);
-d3d_draw_block(-8,-8,12,8,8,0,tex,1,1,tex_shape_2);
+d3d_draw_block(-8,-8,12,8,8,0,tex,1,1,tex_shape_1);
 d3d_transform_set_identity();
 draw_set_color(curcolor);
 draw_set_alpha(curalpha);
