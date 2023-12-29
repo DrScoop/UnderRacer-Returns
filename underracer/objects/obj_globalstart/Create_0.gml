@@ -46,6 +46,10 @@ global.roomname="Bepis"
 global.preview_charname=""
 global.sandboxroom=rm_sandbox_ruins1
 
+// new
+global.spriteTextureLookup = ds_map_create();
+// end new
+
 global.position_1=""
 global.position_2=""
 global.position_3=""

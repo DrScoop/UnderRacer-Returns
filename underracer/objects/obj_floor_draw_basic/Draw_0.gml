@@ -6,7 +6,8 @@ if (view_current == 0) {
         }
 
         // Render bottom faces
-        d3d_primitive_begin_texture(pr_trianglelist, background_get_texture(floortex));
+		
+        d3d_primitive_begin_texture(pr_trianglelist, floortex);
         d3d_vertex_normal_texture(x, y, zbottom + z, 0, 0, 1, 0, 0);
         d3d_vertex_normal_texture(x + 32, y, zbottom + z, 0, 0, 1, 1, 0);
         d3d_vertex_normal_texture(x + 32, y + 32, zbottom + z, 0, 0, 1, 1, 1);
@@ -17,7 +18,7 @@ if (view_current == 0) {
         d3d_primitive_end();
 
         // Render top faces
-        d3d_primitive_begin_texture(pr_trianglelist, background_get_texture(rooftex));
+        d3d_primitive_begin_texture(pr_trianglelist, rooftex);
         d3d_vertex_normal_texture(x, y, ztop + z, 0, 0, -1, 0, 0);
         d3d_vertex_normal_texture(x + 32, y, ztop + z, 0, 0, -1, 1, 0);
         d3d_vertex_normal_texture(x + 32, y + 32, ztop + z, 0, 0, -1, 1, 1);
