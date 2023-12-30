@@ -11,8 +11,7 @@ if (view_current=0) {
 		d3d_transform_add_translation(0,0,0);
 		d3d_transform_add_rotation_z(direction);
 		d3d_transform_add_translation(x,y,z);
-		d3d_draw_wall(-16,0,ztop+z,16,0,zbottom+z,background_get_texture(tex),hrepeat,vrepeat,tex);
-		// todo: ask pete why texture page sizes are having such a big effect on what textures are being drawn
+		d3d_draw_wall(-16,0,ztop+z,16,0,zbottom+z,background_get_texture(tex),hrepeat,vrepeat);
 		d3d_transform_set_identity();
 	}
 }
