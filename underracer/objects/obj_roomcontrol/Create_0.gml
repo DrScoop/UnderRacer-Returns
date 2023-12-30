@@ -7,7 +7,9 @@ texture_set_repeat(0)
 // interpolate textures
 texture_set_interpolation(false);
 d3d_set_perspective(1)
-d3d_set_shading(1)
+//d3d_set_shading(1)
+gpu_set_alphatestenable(true);
+gpu_set_alphatestref(0);
 can_playsong=true
 d3d_set_fog(true,c_black,10,global.renderdistance)
 ambient_r=global.lighting_quantity

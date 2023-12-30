@@ -37,11 +37,12 @@ sound_2play(snd_click)
 }}
 
 if image_index=3{
-if clickd=false{
-clickd=true
-alarm[3]=15
-sound_2play(snd_click)
-}}
+	if clickd=false{
+		clickd=true
+		alarm[3]=15
+		sound_2play(snd_click)
+	}
+}
 
 if image_index=4{
 if clickd=false{
