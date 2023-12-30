@@ -1,11 +1,15 @@
 if (view_current == 0) {
-    if (distance_to_object(obj_cam1) > global.renderdistance) {
+    if (distance_to_object(obj_cam1) > global.renderdistance) exit{
         // Check if local variable z exists
         if (!variable_instance_exists(id, "z")) {
             z = 0;
         }
-
+		
+		draw_set_color(c_white);
+		draw_set_alpha(1);
+		
         // Render bottom faces
+		
         d3d_primitive_begin_texture(pr_trianglelist, background_get_texture(floortex));
         d3d_vertex_normal_texture(x, y, zbottom + z, 0, 0, 1, 0, 0);
         d3d_vertex_normal_texture(x + 32, y, zbottom + z, 0, 0, 1, 1, 0);
@@ -26,6 +30,7 @@ if (view_current == 0) {
         d3d_vertex_normal_texture(x, y + 32, ztop + z, 0, 0, -1, 0, 1);
         d3d_vertex_normal_texture(x, y, ztop + z, 0, 0, -1, 0, 0);
         d3d_primitive_end();
+
     }
 }
 
