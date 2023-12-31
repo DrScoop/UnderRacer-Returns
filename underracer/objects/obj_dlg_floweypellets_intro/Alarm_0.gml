@@ -8,7 +8,7 @@ shake=2
 textspeed=5
 txtsound=snd_talk_flowey_evil
 writer_msg(
-"*Time to DIE!/")
+"* Time to DIE!")
 }}
 
 if dialogue=2{ 
@@ -19,7 +19,7 @@ with dlg
 shake=2
 txtsound=snd_talk_flowey
 writer_msg(
-"*...Wait...&*Did you hear that?/")
+"* ...Wait...&* Did you hear that?/")
 }}
 
 if dialogue>dialoguemax{instance_destroy()}

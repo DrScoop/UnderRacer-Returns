@@ -4,6 +4,7 @@ if activate=true{
 d3d_set_lighting(0);
 d3d_set_projection_ortho(0,0,640,480,0)
 d3d_set_hidden(false);
+d3d_set_fog(false,c_black,10,global.renderdistance)
 draw_set_color(c_white)
 draw_set_font(fnt_hud);
 draw_sprite(spr_hud_box,-1,0,0)
@@ -23,6 +24,7 @@ draw_text(496+42,0+8,string_hash_to_newline(string(target.powerup)))
 draw_sprite_ext(spr_hud_powerup,-1,496,48,1,1,0,c_white,1)
 draw_set_color(c_yellow)
 draw_text(496+8,48+8,string_hash_to_newline("Gold : "+string(global.gold)))
+d3d_set_fog(true,c_black,10,global.renderdistance)
 draw_set_color(c_white)
 draw_set_alpha(1);
 d3d_set_hidden(true);

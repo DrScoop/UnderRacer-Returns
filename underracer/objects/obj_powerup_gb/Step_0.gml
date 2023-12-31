@@ -20,14 +20,14 @@ if can_atk=true{
 if lifetimer>0{
 lifetimer-=2
 if blasted=false{
-blast=instance_create(x,y,obj_gblast)
-blast.creator=id
-blast.target=target
-blast.z=z-5
-blast.direction=direction
-image_index=1
-sound_2play(snd_gblast)
-blasted=true
+	blast=instance_create(x,y,obj_gblast)
+	blast.creator=id
+	blast.target=target
+	blast.z=z-5
+	blast.direction=direction
+	image_index=1
+	sound_2play(snd_gblast)
+	blasted=true
 }}}}
 
 }
@@ -36,8 +36,12 @@ if lifetimer<0{lifetimer=0}
 
 if blasted=true and distance_to_object(nearenemy)>300{lifetimer=0}
 
-if blasted=false {if alive=true and blasted=false and z<24{z+=2}}
-if blasted=true and lifetimer<=0{blast.destroy=true z-=2 image_index=0}
+if blasted=false {
+	if alive=true and blasted=false and z<24{z+=2}
+}
+if blasted=true and lifetimer<=0 and instance_exists(blast){
+	blast.destroy=true z-=2 image_index=0
+}
 
 if z<-33{instance_destroy()}
 

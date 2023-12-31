@@ -1520,7 +1520,7 @@
     {"name":"rm_cmpn_boss_flowey","order":2,"path":"rooms/rm_cmpn_boss_flowey/rm_cmpn_boss_flowey.yy",},
     {"name":"rm_cmpgn_floweybattle","order":3,"path":"rooms/rm_cmpgn_floweybattle/rm_cmpgn_floweybattle.yy",},
     {"name":"rm_cmpn_floweyjudgement","order":4,"path":"rooms/rm_cmpn_floweyjudgement/rm_cmpn_floweyjudgement.yy",},
-    {"name":"rm_cmpn_hacking","order":5,"path":"rooms/rm_cmpn_hacking/rm_cmpn_hacking.yy",},
+    {"name":"rm_cmpn_hacking_dumb","order":5,"path":"rooms/rm_cmpn_hacking_dumb/rm_cmpn_hacking_dumb.yy",},
     {"name":"mus_intro","order":11,"path":"sounds/mus_intro/mus_intro.yy",},
     {"name":"rm_cmpn_hacked","order":6,"path":"rooms/rm_cmpn_hacked/rm_cmpn_hacked.yy",},
     {"name":"rm_battle_vegeduo","order":1,"path":"rooms/rm_battle_vegeduo/rm_battle_vegeduo.yy",},

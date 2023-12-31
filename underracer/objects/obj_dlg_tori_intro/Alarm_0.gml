@@ -35,7 +35,7 @@ with dlg
 {
 txtsound=snd_talk_tori
 writer_msg(
-"*You are the first human&to come here in....&a long time./")
+"* You are the first human&to come here in....&a long time./")
 }}
 
 if dialogue=5{ 
@@ -45,7 +45,7 @@ with dlg
 {
 txtsound=snd_talk_tori
 writer_msg(
-"*I will do my best to&ensure your protection&during your time here./")
+"* I will do my best to&ensure your protection&during your time here./")
 }}
 
 if dialogue=6{ 
@@ -55,7 +55,7 @@ with dlg
 {
 txtsound=snd_talk_tori
 writer_msg(
-"*Come!&*I will guide you through the catacombs./")
+"* Come!&*I will guide you through the catacombs./")
 }}
 
 if dialogue>dialoguemax{instance_destroy()}

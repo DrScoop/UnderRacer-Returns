@@ -43,8 +43,8 @@ function scr_cam_definesencos() {
         switch (cam_index) {
             case 0: cam_obj = obj_cam1; break;
             case 1: cam_obj = obj_cam2; break;
-            case 2: cam_obj = obj_cam3; break;
-            case 3: cam_obj = obj_cam4; break;
+            //case 2: cam_obj = obj_cam3; break;
+            //case 3: cam_obj = obj_cam4; break;
         }
 
         // If a valid camera object is found
