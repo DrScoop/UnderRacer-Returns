@@ -1,0 +1,3 @@
+1. find out what sets the player position when changing rooms in the campaign.
+this needs to be done because code is not working right to spawn the players position correctly upon game
+restart (forced restart due to "hack")
