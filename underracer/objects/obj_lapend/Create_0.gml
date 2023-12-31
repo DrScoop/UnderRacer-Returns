@@ -38,3 +38,4 @@ alarm[0]=11
 
 image_speed=0.5
 
+kart_maxspd = 0;
