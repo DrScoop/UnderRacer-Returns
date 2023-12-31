@@ -11,7 +11,7 @@
   "collisionTolerance": 0,
   "DynamicTexturePage": false,
   "edgeFiltering": false,
-  "For3D": false,
+  "For3D": true,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f4efdb50-ea2a-4ebb-aef1-988827215d55",},
   ],
@@ -28,7 +28,7 @@
     "name": "hud",
     "path": "folders/Sprites/hud.yy",
   },
-  "preMultiplyAlpha": false,
+  "preMultiplyAlpha": true,
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",

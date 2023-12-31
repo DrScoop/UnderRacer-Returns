@@ -8,6 +8,11 @@ global.preview_charname="Frisk"
 sprite_index=spr_kfrisk_d
 }
 
+if position_meeting(mouse_x,mouse_y,obj_slct_clover){
+global.preview_charname="Clover"
+sprite_index=spr_kclover_d
+}
+
 if position_meeting(mouse_x,mouse_y,obj_slct_papyrus){
 global.preview_charname="Papyrus"
 sprite_index=spr_kpapy_d

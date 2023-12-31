@@ -32,7 +32,7 @@ function scr_textdraw() {
 	    halt = 2;
 	    if string_char_at(originalstring,n+1)="^"
 	    halt = 3;
-	    break;
+	    //break;
 	   }
    
 	if string_char_at(originalstring,n)="%" then 
