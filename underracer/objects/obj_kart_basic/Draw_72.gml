@@ -4,9 +4,3 @@ camcos = cos(direction*pi/180);
 
 
 
-
-
-
-
-
-

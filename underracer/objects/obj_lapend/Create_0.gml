@@ -1,4 +1,3 @@
-scr_kartsettings_create()
 position=0
 lastracer_id=0
 player1_time=0
@@ -32,10 +31,18 @@ player6_seconds=0
 player6_id=0
 player6_char=""
 
+powerup = "None";
+z = 0;
+lap = 0;
+player = noone;
+ability_timer = 0;
+ability = "";
+minutes = 0;
+seconds = 0;
+
 can_start=false
 lastracer_player=0
 alarm[0]=11
 
 image_speed=0.5
 
-kart_maxspd = 0;

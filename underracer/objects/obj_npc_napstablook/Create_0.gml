@@ -5,3 +5,8 @@ stun=false
 image_speed=0.1
 modelsprite=spr_npc_napstablook
 
+change_sprite = false;
+mdlspr_down = noone;
+mdlspr_up = noone;
+mdlspr_left = noone;
+mdlspr_right = noone;

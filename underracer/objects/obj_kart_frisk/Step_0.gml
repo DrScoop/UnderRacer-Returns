@@ -22,4 +22,3 @@ ability_timer=0
 ability_trigger=false
 }
 }
-

@@ -6,5 +6,7 @@ if imgalpha<1{
 imgalpha+=(0.0625)/2
 }
 
-if destroy=true{instance_destroy()}
+if destroy ==true { 
+	instance_destroy() 
+}
 

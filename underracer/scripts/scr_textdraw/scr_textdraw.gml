@@ -91,11 +91,8 @@ function scr_textdraw() {
 	     }
 	}
 	else 
-	draw_text_transformed(myx + (random(shake)-(shake/2)), myy + (random(shake)-(shake/2)), string_hash_to_newline(myletter),1,1,0) 
+	draw_text_transformed(myx + (random(shake)-(shake/2)), myy + (random(shake)-(shake/2)), string_hash_to_newline(myletter),1.5,1.5,0) 
 	myx = (myx + spacing);
 	}
 	draw_set_color(c_black); 
-
-
-
 }

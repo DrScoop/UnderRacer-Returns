@@ -2,8 +2,8 @@
 window_h = window_get_height()
 //window_w = window_get_region_width(); 
 window_w = window_get_width(); 
-surface = surface_create(window_get_width(),window_get_height()); 
-buffer  = surface_create(window_get_width(),window_get_height());
+surface = surface_create(window_w,window_h); 
+buffer  = surface_create(window_w,window_h);
 fx = window_w/display_get_width(); 
 fy = window_h/display_get_height();
 //set_automatic_draw(0); 

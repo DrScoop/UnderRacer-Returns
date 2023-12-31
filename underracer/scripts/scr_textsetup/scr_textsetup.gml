@@ -10,4 +10,6 @@ function scr_textsetup(argument0, argument1, argument2, argument3, argument4, ar
 	spacing=argument8; //text spacing
 	vspacing=argument9; //vertical spacing yep, old default was 25
 
+
+
 }

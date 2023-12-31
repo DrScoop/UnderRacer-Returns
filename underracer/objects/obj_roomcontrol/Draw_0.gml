@@ -17,4 +17,3 @@ d3d_light_enable(2,true);
 d3d_light_enable(3,true);
 d3d_light_enable(4,true);
 d3d_light_enable(5,true);
-

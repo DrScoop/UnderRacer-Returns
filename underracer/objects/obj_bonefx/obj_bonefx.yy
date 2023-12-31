@@ -13,7 +13,10 @@
     "name": "fx",
     "path": "folders/Objects/do not place/fx.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_fx_basic",
+    "path": "objects/obj_fx_basic/obj_fx_basic.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

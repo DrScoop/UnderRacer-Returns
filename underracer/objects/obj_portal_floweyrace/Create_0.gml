@@ -1,2 +1,2 @@
-direction+=90
-
+direction += 90;
+z = 0;

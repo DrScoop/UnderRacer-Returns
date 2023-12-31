@@ -7,3 +7,4 @@ image_speed=0.25
 can_target=false
 target=0
 
+change_sprite = false;

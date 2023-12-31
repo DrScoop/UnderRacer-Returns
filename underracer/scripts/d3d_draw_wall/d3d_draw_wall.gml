@@ -25,14 +25,14 @@ function d3d_draw_wall(argument0, argument1, argument2, argument3, argument4, ar
 	var __hrepeat = argument7;
 	var __vrepeat = argument8;
 
-	var __xdiff = __x2 - __x1;
-	var __ydiff = __y2 - __y1;
+	var __xdiff = __x2 - __x1; // a
+	var __ydiff = __y2 - __y1; // b
 
-	var __lsquared = (__xdiff * __xdiff) + (__ydiff * __ydiff);
+	var __lsquared = (__xdiff * __xdiff) + (__ydiff * __ydiff); // a * a + b * b = c * c
 	if (__lsquared == 0)
 		return 0;
 	
-	var __l = sqrt(__lsquared);
+	var __l = sqrt(__lsquared); 
 
 	var __nx = __ydiff / __l;
 	var __ny = -__xdiff / __l;

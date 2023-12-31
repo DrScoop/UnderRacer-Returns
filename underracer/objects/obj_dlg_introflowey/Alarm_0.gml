@@ -5,7 +5,7 @@ if dialogue=1{
 	{
 		txtsound=snd_talk_flowey
 		writer_msg(
-		"\\W* Howdy! I'm \\YFLOWEY\\W!&* \\YFLOWEY\\W the \\YFLOWER\\W!")
+		"\\W*Howdy! I'm \\YFLOWEY\\W!&*\\YFLOWEY\\W the \\YFLOWER\\W!/")
 	}
 }
 
@@ -16,7 +16,7 @@ with dlg
 {
 txtsound=snd_talk_flowey
 writer_msg(
-"\\W* Hmmm...&* You're new to the &\\YRACING CIRCUIT\\W,aren'tcha?\\W")
+"\\W*Hmmm...&*You're new to&the \\YRACING CIRCUIT\\W,&aren'tcha?\\W/")
 }}  
 
 if dialogue=3{ 
@@ -26,7 +26,7 @@ with dlg
 {
 txtsound=snd_talk_flowey
 writer_msg(
-"* Golly, you must be&so confused.")
+"*Golly, you must be&so confused.")
 }}
 
 if dialogue=4{ 
@@ -36,7 +36,7 @@ with dlg
 {
 txtsound=snd_talk_flowey
 writer_msg(
-"* Someone ought to&teach you how things&work around here!")
+"*Someone ought to&teach you how things&work around here!/")
 }}
 
 if dialogue=5{ 
@@ -46,7 +46,7 @@ with dlg
 {
 txtsound=snd_talk_flowey
 writer_msg(
-"* I guess little old me&will have to do.&* Ready? Here we go!")
+"*I guess little old me&will have to do.&*Ready? Here we go!/")
 }}
 
 if dialogue>dialoguemax{instance_destroy()}

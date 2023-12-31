@@ -6,6 +6,4 @@ image_index=0
 image_speed=0.5
 can_target=false
 target=0
-z=0
-
 action_set_alarm(1, 0);
