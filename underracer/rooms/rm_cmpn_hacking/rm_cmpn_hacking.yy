@@ -1,13 +1,13 @@
 {
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
-  "name": "rm_cmpn_hacking_dumb",
+  "name": "rm_cmpn_hacking",
   "creationCodeFile": "",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,
   "instanceCreationOrder": [
-    {"name":"inst_BF2EA318","path":"rooms/rm_cmpn_hacking_dumb/rm_cmpn_hacking_dumb.yy",},
+    {"name":"inst_BF2EA318","path":"rooms/rm_cmpn_hacking/rm_cmpn_hacking.yy",},
   ],
   "isDnd": false,
   "layers": [
