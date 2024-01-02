@@ -38,7 +38,7 @@ if can_target=true {
 	}
 }
 // end new
-if target != obj_wincam_pos {
+if target != obj_wincam_pos /*&& variable_instance_exists(target,"lap")*/{
 	scr_wincampos()
 }
 

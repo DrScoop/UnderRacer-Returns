@@ -2,7 +2,7 @@ if (view_current=0) {
 if distance_to_object(obj_cam1) > global.renderdistance exit{
 // Place this code in the draw event of your 3d object
 // Specify here each background or sprite index to be used as textures (don't use background_get_texture() or sprite_get_texture())
-if !variable_local_exists("z") z = 0;
+if !variable_instance_exists(self,"z") {z=0};
 var tex_top;
 tex_top = tex_snowdin_snowtile_snow;
 var tex_front;

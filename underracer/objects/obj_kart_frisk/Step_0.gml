@@ -22,4 +22,4 @@ if ability_trigger=true{
 		ability_trigger=false
 	}
 }
-show_debug_message("x="+ string(x))
+//show_debug_message("x="+ string(x))

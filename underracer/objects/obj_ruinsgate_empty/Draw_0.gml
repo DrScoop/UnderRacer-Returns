@@ -1,6 +1,6 @@
 // Place this code in the draw event of your 3d object
 // Specify here each background or sprite index to be used as textures (don't use background_get_texture() or sprite_get_texture())
-if !variable_local_exists("z") z = 0;
+if !variable_instance_exists(self,"z") {z=0};
 var tex_pillar1;
 tex_pillar1 = tex_ruinsportal_pillar;
 var tex_pillar2;

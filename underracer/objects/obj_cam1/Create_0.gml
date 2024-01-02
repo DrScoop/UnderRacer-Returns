@@ -2,6 +2,10 @@
 activate=true
 height=18
 camdir=0
+
+camsin = 0;
+camcos = 0;
+
 zoom=90
 pitch=0
 adddir=0
