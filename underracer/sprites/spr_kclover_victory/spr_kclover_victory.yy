@@ -11,7 +11,7 @@
   "collisionTolerance": 0,
   "DynamicTexturePage": false,
   "edgeFiltering": false,
-  "For3D": false,
+  "For3D": true,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fd09b19d-86de-4d57-a525-56d0c6da5654",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"130ea4d5-748b-40bd-b452-2c005c6f973f",},

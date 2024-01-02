@@ -1,5 +1,5 @@
 if can_start {
-    if global.player1_id != 0 {
+    if instance_exists(global.player1_id) {
         scr_timetoname(global.player1_id, global.player1_char);
     }
 

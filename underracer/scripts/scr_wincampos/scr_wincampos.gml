@@ -9,6 +9,8 @@ function scr_wincampos() {
 			Angle = point_direction(0, 0, DX, DY)
 			target=obj_wincam_pos
 			direction=0
+			sound_stop_all()
+			
 		}
 	}
 }
