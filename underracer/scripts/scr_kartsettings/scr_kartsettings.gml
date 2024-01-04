@@ -21,18 +21,19 @@ function scr_kartsettings() {
 
 	//Camera Controls
 	if global.racewon=false{
-	if global.dialogue=false{
-	//Keyboard
-	if bot=false{
-	if player=1{
-	if keyboard_check(global.control_pl1cam_kb) or gamepad_button_check(1,global.control_pl1cam_jk){looktimer-=2.5 camobj.adddir=180 camobj.DX = -40}
-	if keyboard_check_released(global.control_pl1cam_kb) or gamepad_button_check_released(1,global.control_pl1cam_jk){mdlspr_down=mdlspr_down_ref camobj.adddir=0 camobj.DX = -20 looktimer=20}
-	}
-	if player=2{
-	if keyboard_check(global.control_pl2cam_kb) or gamepad_button_check(2,global.control_pl2cam_jk){looktimer-=2.5 camobj.adddir=180 camobj.DX = -40}
-	if keyboard_check_released(global.control_pl2cam_kb) or gamepad_button_check_released(2,global.control_pl2cam_jk){mdlspr_down=mdlspr_down_ref camobj.adddir=0 camobj.DX = -20 looktimer=20}
-	}}
-	}
+		if global.dialogue=false{
+		//Keyboard
+			if bot=false{
+				if player=1{
+					if keyboard_check(global.control_pl1cam_kb) or gamepad_button_check(1,global.control_pl1cam_jk){final_sprite=mdlspr_down_look looktimer-=2.5 camobj.adddir=180 camobj.DX = -40}
+					if keyboard_check_released(global.control_pl1cam_kb) or gamepad_button_check_released(1,global.control_pl1cam_jk){final_sprite=mdlspr_up camobj.adddir=0 camobj.DX = -20 looktimer=20}
+				}
+				if player=2{
+					if keyboard_check(global.control_pl2cam_kb) or gamepad_button_check(2,global.control_pl2cam_jk){final_sprite=mdlspr_down_look looktimer-=2.5 camobj.adddir=180 camobj.DX = -40}
+					if keyboard_check_released(global.control_pl2cam_kb) or gamepad_button_check_released(2,global.control_pl2cam_jk){final_sprite=mdlspr_up camobj.adddir=0 camobj.DX = -20 looktimer=20}
+				}
+			}
+		}
 	}
 
 	if global.racewon=true{if cam_changedis=true{mdlspr_down=mdlspr_down_ref camobj.adddir=0 camobj.DX = -50 looktimer=20}}
@@ -46,7 +47,7 @@ function scr_kartsettings() {
 	if speed>kart_maxspd/2{vibration=choose(0.2,0.25,0.1,0.15,0.1,0.05)}
 	if stun=true{stuntimer-=1 final_sprite=mdlspr_stun image_speed=0.5}
 	if stuntimer=38{if !sound_isplaying(snd_stun){sound_2play(snd_stun)} stuntimer=37}
-	if stuntimer<=0{stun=false stuntimer=40 image_speed=0 image_index=0}
+	if stuntimer<=0{stun=false stuntimer=40 image_speed=0 final_sprite=mdlspr_up}
 
 	if fall=true{
 	z-=2 
