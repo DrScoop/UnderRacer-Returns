@@ -26,10 +26,10 @@ Len = point_distance(0, 0, DX, DY);
 Angle = point_direction(0, 0, DX, DY);
 }
 
+var nearenemy;
 if image_alpha=1{
 if nearenemy!=creator{
 if distance_to_object(nearenemy)<300{
-var nearenemy;
 nearenemy=instance_nearest_notme(x,y,obj_kart_basic,creator)
 speed=14
 direction=point_direction(x,y,nearenemy.x,nearenemy.y)
