@@ -38,8 +38,9 @@ if can_target=true {
 	}
 }
 // end new
-
-scr_wincampos()
+if target != obj_wincam_pos /*&& variable_instance_exists(target,"lap")*/{
+	scr_wincampos()
+}
 
 if destroy=true{instance_destroy()}
 

@@ -699,6 +699,7 @@
     {"id":{"name":"spr_dlg_cfrisk_quiet","path":"sprites/spr_dlg_cfrisk_quiet/spr_dlg_cfrisk_quiet.yy",},},
     {"id":{"name":"spr_dlg_hfrisk_happy","path":"sprites/spr_dlg_hfrisk_happy/spr_dlg_hfrisk_happy.yy",},},
     {"id":{"name":"spr_dlg_hfrisk_noeyes","path":"sprites/spr_dlg_hfrisk_noeyes/spr_dlg_hfrisk_noeyes.yy",},},
+    {"id":{"name":"todo","path":"notes/todo/todo.yy",},},
     {"id":{"name":"spr_dlg_hfrisk_quiet","path":"sprites/spr_dlg_hfrisk_quiet/spr_dlg_hfrisk_quiet.yy",},},
     {"id":{"name":"spr_dlg_hfrisk_evil","path":"sprites/spr_dlg_hfrisk_evil/spr_dlg_hfrisk_evil.yy",},},
     {"id":{"name":"spr_dlg_hfrisk_scared","path":"sprites/spr_dlg_hfrisk_scared/spr_dlg_hfrisk_scared.yy",},},

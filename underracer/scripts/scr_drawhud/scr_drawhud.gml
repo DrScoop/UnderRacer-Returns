@@ -3,6 +3,7 @@ function scr_drawhud() {
 		d3d_set_lighting(0);
 		d3d_set_projection_ortho(0,0,640,480,0)
 		d3d_set_hidden(false);
+		d3d_set_fog(false,c_black,10,global.renderdistance)
 		draw_set_color(c_white)
 		draw_set_font(fnt_hud);
 		draw_sprite(spr_hud_box,-1,0,0)
@@ -29,6 +30,7 @@ function scr_drawhud() {
 		//HUD Timer
 		draw_sprite_ext(spr_hud_timebox,-1,496,0,1,1,0,c_white,1)
 		draw_text(496+46,12,string_hash_to_newline(string(target.minutes)+" : "+string(target.seconds)))
+		d3d_set_fog(true,c_black,10,global.renderdistance)
 		draw_set_alpha(1);
 		d3d_set_hidden(true);
 		d3d_set_lighting(global.lighting);

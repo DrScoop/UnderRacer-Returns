@@ -1,5 +1,5 @@
-camsin=0
-camcos=0
+camsin=global.char1_obj.camsin
+camcos=global.char1_obj.camcos
 cam=0
 stun=false
 image_index=0

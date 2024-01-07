@@ -4,7 +4,7 @@ stringpos=1; //which character of the string it starts on
 lineno=0; //default the line's vertical space
 halt=0; //if 1, you must hit enter to continue
 writingx = 136;
-writingy = 348;
+writingy = 336;
 myx = writingx;
 myy = writingy;
 txtsound = snd_text;
@@ -14,7 +14,7 @@ dialogue=0
 dialoguemax=3
 image_speed=0.25
 destroy=false
-font=fnt_hud
+font=fnt_dt
 
 border_x1[1]= 32;
 border_x2[1]= 536;
