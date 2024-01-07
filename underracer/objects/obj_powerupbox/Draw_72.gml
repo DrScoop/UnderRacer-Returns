@@ -1,5 +1,5 @@
-camcos = cos(direction * pi / 180);
-camsin = sin(direction * pi / 180);
+camcos = obj_cam1.camcos;
+camsin = obj_cam1.camsin;
 
 
 

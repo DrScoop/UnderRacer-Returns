@@ -1,20 +1,22 @@
+
+// scr_sprite_model(right,up,left,down,camera)
 function scr_sprite_model(argument0, argument1, argument2, argument3, argument4) {
-	var mdirection,bearing;
+	var mdirection, bearing, tex;
 	mdirection = direction
     
 	bearing = XWaySprite(argument4.x,argument4.y, x, y, mdirection, 8)
 
 
-	if (bearing = 7) tex=argument3;
-	else if (bearing = 6) tex=argument2;
-	else if (bearing = 5) tex=argument1;
-	else if (bearing = 4) tex=argument1;
-	else if (bearing = 3) tex=argument1;
-	else if (bearing = 2) tex=argument0;
-	else if (bearing = 1) tex=argument3;
+	if (bearing == 7) tex=argument3;
+	else if (bearing == 6) tex=argument2;
+	else if (bearing == 5) tex=argument1;
+	else if (bearing == 4) tex=argument1;
+	else if (bearing == 3) tex=argument1;
+	else if (bearing == 2) tex=argument0;
+	else if (bearing == 1) tex=argument3;
 	else tex=argument3;
 
-	final_sprite=tex
+	final_sprite = tex;
 
 	/*
 	//

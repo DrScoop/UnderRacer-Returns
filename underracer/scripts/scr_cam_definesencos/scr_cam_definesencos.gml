@@ -48,14 +48,14 @@ function scr_cam_definesencos() {
         }
 
         // If a valid camera object is found
-        if (cam_obj != noone && distance_to_object(cam_obj) > global.renderdistance) {
+        if (cam_obj != noone && distance_to_object(cam_obj) < global.renderdistance) {
             camsin = cam_obj.camsin;
             camcos = cam_obj.camcos;
             cam = cam_obj;
 
             // Check conditions before calling scr_sprite_model
             if (!stun && !change_sprite) {
-                scr_sprite_model(mdlspr_right, mdlspr_up, mdlspr_left, mdlspr_down, cam);
+                scr_sprite_model(mdlspr_right, mdlspr_up, mdlspr_left, mdlspr_down, cam_obj);
             }
         }
     }
