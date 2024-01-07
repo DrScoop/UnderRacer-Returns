@@ -3,14 +3,14 @@ if image_index>4{image_index=0}
 
 //Keyboard
 if clickd=false{
-if keyboard_check_pressed(global.control_pl1move_kb) or keyboard_check_pressed(vk_up) or gamepad_button_check_pressed(1,global.control_pl1move_jk) or gamepad_button_check_pressed(1,global.control_pl1left_jk){
-image_index-=1
-sound_2play(snd_slct)
-}
-if keyboard_check_pressed(global.control_pl1break_kb) or keyboard_check_pressed(vk_down) or gamepad_button_check_pressed(1,global.control_pl1break_jk) or gamepad_button_check_pressed(1,global.control_pl1right_jk){
-image_index+=1
-sound_2play(snd_slct)
-}
+	if keyboard_check_pressed(global.control_pl1move_kb) or keyboard_check_pressed(vk_up) or gamepad_button_check_pressed(1,global.control_pl1move_jk) or gamepad_button_check_pressed(1,global.control_pl1left_jk){
+		image_index-=1
+		sound_2play(snd_slct)
+	}
+	if keyboard_check_pressed(global.control_pl1break_kb) or keyboard_check_pressed(vk_down) or gamepad_button_check_pressed(1,global.control_pl1break_jk) or gamepad_button_check_pressed(1,global.control_pl1right_jk){
+		image_index+=1
+		sound_2play(snd_slct)
+	}
 }
 
 if keyboard_check_pressed(global.control_pl1use_kb) or keyboard_check_pressed(vk_enter) or gamepad_button_check_pressed(1,global.control_pl1use_jk){

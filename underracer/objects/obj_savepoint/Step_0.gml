@@ -13,7 +13,7 @@ if direction>360{direction=0}
 if distance_to_object(obj_kart_frisk)<10{
 
 if keyboard_check_pressed(global.control_pl1use_kb){
-	if instance_exists(other) {
+	if variable_instance_exists(other,"player") {
 		if other.player=1{
 			if !instance_exists(obj_hud_save){
 				instance_create(x,y,obj_hud_save)

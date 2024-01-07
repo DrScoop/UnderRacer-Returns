@@ -19,13 +19,14 @@ if clickd=false{
 if keyboard_check_pressed(global.control_pl1use_kb) or keyboard_check_pressed(vk_enter) or gamepad_button_check_pressed(1,global.control_pl1use_jk){
 
 if image_index=0{
-if clickd=false{
-clickd=true
-alarm[0]=35
-sound_2play(snd_save)
-scr_save_data()
-final_sprite=spr_hud_saved
-}}
+	if clickd=false{
+	clickd=true
+	alarm[0]=35
+	sound_2play(snd_save)
+	scr_save_data()
+	final_sprite=spr_hud_saved
+	}
+}
 
 if image_index=1{
 if clickd=false{

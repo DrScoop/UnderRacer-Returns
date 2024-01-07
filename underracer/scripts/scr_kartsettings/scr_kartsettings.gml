@@ -206,21 +206,23 @@ function scr_kartsettings() {
 	}}
 
 	if bot=true{
-	if path_speed!=0{
-	if drifting=true{fx=instance_create(x,y,obj_racefx) fx.target=id fx.direction=direction fx.speed=speed/1.15 fx.friction=0.1}
-	if collision_point(x,y,obj_floor_vines_ruins,1,1) 
-	or collision_point(x,y,obj_floor_leaves_ruins,1,1) 
-	or collision_point(x,y,obj_floor_wfall_grass,1,1)
-	{fx=instance_create(x,y,obj_grassfx) fx.target=id fx.direction=direction fx.speed=speed/1.15 fx.friction=0.1}
-	if collision_point(x,y,obj_floor_snowdin,1,1) 
-	or collision_point(x,y,obj_floor_snow,1,1) 
-	or collision_point(x,y,obj_floor_ice,1,1) 
-	{fx=instance_create(x,y,obj_snowfloorfx) fx.target=id fx.direction=direction fx.speed=speed/1.15 fx.friction=0.1}
-	if collision_point(x,y,obj_floor_wfall_waterfloor,1,1) 
-	or collision_point(x,y,obj_floor_ruins_waterfloor,1,1) 
-	{fx=instance_create(x,y,obj_waterfloorfx) fx.target=id fx.direction=direction fx.speed=speed/1.15 fx.friction=0.1}
-	fx_timer=40
-	}}
+		if path_speed!=0{
+			final_sprite=mdlspr_up
+			if drifting=true{fx=instance_create(x,y,obj_racefx) fx.target=id fx.direction=direction fx.speed=speed/1.15 fx.friction=0.1}
+			if collision_point(x,y,obj_floor_vines_ruins,1,1) 
+			or collision_point(x,y,obj_floor_leaves_ruins,1,1) 
+			or collision_point(x,y,obj_floor_wfall_grass,1,1)
+			{fx=instance_create(x,y,obj_grassfx) fx.target=id fx.direction=direction fx.speed=speed/1.15 fx.friction=0.1}
+			if collision_point(x,y,obj_floor_snowdin,1,1) 
+			or collision_point(x,y,obj_floor_snow,1,1) 
+			or collision_point(x,y,obj_floor_ice,1,1) 
+			{fx=instance_create(x,y,obj_snowfloorfx) fx.target=id fx.direction=direction fx.speed=speed/1.15 fx.friction=0.1}
+			if collision_point(x,y,obj_floor_wfall_waterfloor,1,1) 
+			or collision_point(x,y,obj_floor_ruins_waterfloor,1,1) 
+			{fx=instance_create(x,y,obj_waterfloorfx) fx.target=id fx.direction=direction fx.speed=speed/1.15 fx.friction=0.1}
+			fx_timer=40
+		}
+	}
 	}
 
 	}
