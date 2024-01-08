@@ -29,7 +29,7 @@ switch halt
 }
 
 if gamepad_exists(1){
-if gamepad_button_check_pressed(1,global.control_pl1use_jk){
+if gamepad_button_check_pressed(0,global.control_pl1use_jk){
 switch halt
 {
  case 1:

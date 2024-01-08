@@ -201,8 +201,8 @@ function scr_load_data() {
 	global.control_pl2cam_kb=ord("U")
 
 	//Global controls for all players (Joystick)
-	global.control_pl1move_jk=15
-	global.control_pl1break_jk=16
+	global.control_pl1move_jk=gp_shoulderrb
+	global.control_pl1break_jk=gp_shoulderlb
 	global.control_pl1right_jk=12
 	global.control_pl1left_jk=11
 	global.control_pl1use_jk=gp_face1

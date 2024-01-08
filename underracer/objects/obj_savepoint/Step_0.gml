@@ -23,7 +23,7 @@ if keyboard_check_pressed(global.control_pl1use_kb){
 	}
 }
 
-if gamepad_button_check_pressed(1,global.control_pl1use_jk){
+if gamepad_button_check_pressed(0,global.control_pl1use_jk){
 if other.player=1{
 if !instance_exists(obj_hud_save){
 instance_create(x,y,obj_hud_save)

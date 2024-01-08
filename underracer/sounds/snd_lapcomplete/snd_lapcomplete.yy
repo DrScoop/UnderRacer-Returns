@@ -10,7 +10,7 @@
   "bitRate": 192,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.0,
+  "duration": 0.689342,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
@@ -18,6 +18,6 @@
   "preload": true,
   "sampleRate": 44100,
   "soundFile": "snd_lapcomplete",
-  "type": 0,
+  "type": 1,
   "volume": 0.82,
 }

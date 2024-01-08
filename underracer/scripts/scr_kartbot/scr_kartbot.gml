@@ -1,16 +1,16 @@
 function scr_kartbot() {
-	if global.bot_trigger=false{instance_destroy()}
+	if global.bot_trigger==false{instance_destroy()}
 
-	if global.racestart=true{bot_racestart=true}
-	if global.racestart=false{bot_racestart=false}
+	if global.racestart==true{bot_racestart=true}
+	if global.racestart==false{bot_racestart=false}
 
 	if bot_pathstart=false{speed+=kart_accel}
 
-	if bot_racestart=true and bot_pathstart=true{
-	path_start(botpath,botspd,2,true)
-	speed=0
-	bot_action="Move"
-	bot_pathstart=2
+	if bot_racestart==true and bot_pathstart==true and !global.racewon{
+		path_start(botpath,botspd,2,true)
+		speed=0
+		bot_action="Move"
+		bot_pathstart=2
 	}
 
 	if stun=false{

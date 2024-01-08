@@ -20,12 +20,12 @@ function scr_kartsettings() {
 	*/
 
 	//Camera Controls
-	if global.racewon=false{
-		if global.dialogue=false{
+	if global.racewon==false{
+		if global.dialogue==false{
 		//Keyboard
 			if bot=false{
 				if player=1{
-					if keyboard_check(global.control_pl1cam_kb) or gamepad_button_check(1,global.control_pl1cam_jk){final_sprite=mdlspr_down_look looktimer-=2.5 camobj.adddir=180 camobj.DX = -40}
+					if keyboard_check(global.control_pl1cam_kb) or gamepad_button_check(0,global.control_pl1cam_jk){final_sprite=mdlspr_down_look looktimer-=2.5 camobj.adddir=180 camobj.DX = -40}
 					if keyboard_check_released(global.control_pl1cam_kb) or gamepad_button_check_released(1,global.control_pl1cam_jk){final_sprite=mdlspr_up camobj.adddir=0 camobj.DX = -20 looktimer=20}
 				}
 				if player=2{
@@ -36,20 +36,20 @@ function scr_kartsettings() {
 		}
 	}
 
-	if global.racewon=true{if cam_changedis=true{mdlspr_down=mdlspr_down_ref camobj.adddir=0 camobj.DX = -50 looktimer=20}}
+	if global.racewon==true{if cam_changedis=true{mdlspr_down=mdlspr_down_ref camobj.adddir=0 camobj.DX = -50 looktimer=20}}
 
-	if global.racestart=true{
+	if global.racestart==true{
 	//Random Settings
 	if speed>kart_maxspd{speed=kart_maxspd}
 	if speed<-kart_maxspd/4{speed=-kart_maxspd/4}
 	if speed=0{can_turn=false}
 	if speed!=0{can_turn=true vibration=choose(0.1,0.15,0.05,0.1,0.05,0)}
 	if speed>kart_maxspd/2{vibration=choose(0.2,0.25,0.1,0.15,0.1,0.05)}
-	if stun=true{stuntimer-=1 final_sprite=mdlspr_stun image_speed=0.5}
-	if stuntimer=38{if !sound_isplaying(snd_stun){sound_2play(snd_stun)} stuntimer=37}
+	if stun==true{stuntimer-=1 final_sprite=mdlspr_stun image_speed=0.5}
+	if stuntimer==38{if !sound_isplaying(snd_stun){sound_2play(snd_stun)} stuntimer=37}
 	if stuntimer<=0{stun=false stuntimer=40 image_speed=0 final_sprite=mdlspr_up}
 
-	if fall=true{
+	if fall==true{
 	z-=2 
 	change_sprite=true
 	final_sprite=mdlspr_stun 
@@ -74,16 +74,16 @@ function scr_kartsettings() {
 	//Player 1 Controls
 	if player=1{
 	//Controls (Turning, Acceleration, Braking, Speed limits, Etc...)
-	if keyboard_check(global.control_pl1move_kb) or gamepad_button_check(1,global.control_pl1move_jk){speed+=kart_accel}
-	if keyboard_check(global.control_pl1break_kb) or gamepad_button_check(1,global.control_pl1break_jk){speed-=kart_accel}
+	if keyboard_check(global.control_pl1move_kb) or gamepad_button_check(0,global.control_pl1move_jk){speed+=kart_accel}
+	if keyboard_check(global.control_pl1break_kb) or gamepad_button_check(0,global.control_pl1break_jk){speed-=kart_accel}
 	if can_turn=true{
-	if keyboard_check(global.control_pl1left_kb) or gamepad_button_check(1,global.control_pl1left_jk){direction+=((driftadd/4)+(kart_turn/1.25))/2 driftadd+=1}
-	if keyboard_check(global.control_pl1right_kb) or gamepad_button_check(1,global.control_pl1right_jk){direction-=((driftadd/4)+(kart_turn/1.25))/2 driftadd+=1}
+	if keyboard_check(global.control_pl1left_kb) or gamepad_axis_value(0, 0.5) <= -0.5 {direction+=((driftadd/4)+(kart_turn/1.25))/2 driftadd+=1}
+	if keyboard_check(global.control_pl1right_kb) or gamepad_axis_value(0, 0.5) >= 0.5{direction-=((driftadd/4)+(kart_turn/1.25))/2 driftadd+=1}
 	}
-	if keyboard_check_pressed(global.control_pl1use_kb) or gamepad_button_check_pressed(1,global.control_pl1use_jk){powerup_trigger=true}
-	if keyboard_check(global.control_pl1special_kb) or gamepad_button_check(1,global.control_pl1special_jk){ability_trigger=true}
-	if !keyboard_check(global.control_pl1right_kb) and !gamepad_button_check(1,global.control_pl1right_jk) and 
-	!keyboard_check(global.control_pl1left_kb) and !gamepad_button_check(1,global.control_pl1left_jk){driftadd=0}
+	if keyboard_check_pressed(global.control_pl1use_kb) or gamepad_button_check_pressed(0,global.control_pl1use_jk){powerup_trigger=true}
+	if keyboard_check(global.control_pl1special_kb) or gamepad_button_check(0,global.control_pl1special_jk){ability_trigger=true}
+	if !keyboard_check(global.control_pl1right_kb) and !gamepad_button_check(0,global.control_pl1right_jk) and 
+	!keyboard_check(global.control_pl1left_kb) and !gamepad_button_check(0,global.control_pl1left_jk){driftadd=0}
 	}
 
 	//Player 2 Controls
@@ -125,7 +125,7 @@ function scr_kartsettings() {
 
 	scr_powerups()
 
-	if global.racestart=true{
+	if global.racestart==true{
 	steps+=1 // Add to the amount of time gone by (in steps)
 	minutes=floor((steps/room_speed)/60) // Figure out the minutes
 	seconds=floor(steps/room_speed)-(minutes*60) // Figure out the seconds
@@ -146,32 +146,46 @@ function scr_kartsettings() {
 	//Race Gamemode Positions
 	if global.gamemode="Race"{
 	global.racewon=true
-	if race_position=1{x=obj_podium_pos1.x y=obj_podium_pos1.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_victory} image_speed=0.25 z=12 change_sprite=true global.position_1_name=char}
-	if race_position=2{x=obj_podium_pos2.x y=obj_podium_pos2.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_victory} image_speed=0.25 z=8  change_sprite=true global.position_2_name=char}
-	if race_position=3{x=obj_podium_pos3.x y=obj_podium_pos3.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_victory} image_speed=0.25 z=8  change_sprite=true global.position_3_name=char}
-	if race_position=4{x=obj_podium_pos4.x y=obj_podium_pos4.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_defeat}  image_speed=0.25 z=0  change_sprite=true global.position_4_name=char}
-	if race_position=5{x=obj_podium_pos5.x y=obj_podium_pos5.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_defeat}  image_speed=0.25 z=0  change_sprite=true global.position_5_name=char}
-	if race_position=6{x=obj_podium_pos6.x y=obj_podium_pos6.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_defeat}  image_speed=0.25 z=0  change_sprite=true global.position_6_name=char}
+	if race_position==1{x=obj_podium_pos1.x y=obj_podium_pos1.y speed=0 direction=0 path_speed=0 if change_sprite==false{final_sprite=mdlspr_victory} image_speed=0.25 z=12 change_sprite=true global.position_1_name=char}
+	if race_position==2{x=obj_podium_pos2.x y=obj_podium_pos2.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_victory} image_speed=0.25 z=8  change_sprite=true global.position_2_name=char}
+	if race_position==3{x=obj_podium_pos3.x y=obj_podium_pos3.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_victory} image_speed=0.25 z=8  change_sprite=true global.position_3_name=char}
+	if race_position==4{x=obj_podium_pos4.x y=obj_podium_pos4.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_defeat}  image_speed=0.25 z=0  change_sprite=true global.position_4_name=char}
+	if race_position==5{x=obj_podium_pos5.x y=obj_podium_pos5.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_defeat}  image_speed=0.25 z=0  change_sprite=true global.position_5_name=char}
+	if race_position==6{x=obj_podium_pos6.x y=obj_podium_pos6.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_defeat}  image_speed=0.25 z=0  change_sprite=true global.position_6_name=char}
 	}
 	//Campaign Gamemode Positions
 	if global.gamemode="Campaign"{
 	global.racewon=true
+	if bot && (bot_pathstart == 2 || bot_pathstart == true) {
+		path_end()
+		bot_pathstart = false;
+	}
 	if global.chars=2{
-	if race_position=1{x=obj_podium_pos1.x y=obj_podium_pos1.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_victory} image_speed=0.25 z=12 change_sprite=true global.position_1_name=char}
-	if race_position=2{x=obj_podium_pos2.x y=obj_podium_pos2.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_defeat} image_speed=0.25 z=8  change_sprite=true global.position_2_name=char}
+	if race_position == 1 {x=obj_podium_pos1.x y=obj_podium_pos1.y speed=0 direction=0 path_speed=0 if change_sprite==false{final_sprite=mdlspr_victory} image_speed=0.25 z=12 change_sprite=true global.position_1_name=char}
+	if race_position == 2 {
+		x=obj_podium_pos2.x 
+		y=obj_podium_pos2.y 
+		speed=0 
+		direction=0 
+		path_speed=0 
+		if change_sprite==false{
+			final_sprite=mdlspr_defeat
+		} 
+		image_speed=0.25 z=8  change_sprite=true global.position_2_name=char
+	}
 	}
 	if global.chars=3{
-	if race_position=1{x=obj_podium_pos1.x y=obj_podium_pos1.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_victory} image_speed=0.25 z=12 change_sprite=true global.position_1_name=char}
-	if race_position=2{x=obj_podium_pos2.x y=obj_podium_pos2.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_victory} image_speed=0.25 z=8 change_sprite=true global.position_2_name=char}
-	if race_position=3{x=obj_podium_pos3.x y=obj_podium_pos3.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_defeat} image_speed=0.25 z=8  change_sprite=true global.position_3_name=char}
+	if race_position == 1 {x=obj_podium_pos1.x y=obj_podium_pos1.y speed=0 direction=0 path_speed=0 if change_sprite==false{final_sprite=mdlspr_victory} image_speed=0.25 z=12 change_sprite=true global.position_1_name=char}
+	if race_position == 2 {x=obj_podium_pos2.x y=obj_podium_pos2.y speed=0 direction=0 path_speed=0 if change_sprite==false{final_sprite=mdlspr_victory} image_speed=0.25 z=8 change_sprite=true global.position_2_name=char}
+	if race_position ==3 {x=obj_podium_pos3.x y=obj_podium_pos3.y speed=0 direction=0 path_speed=0 if change_sprite==false{final_sprite=mdlspr_defeat} image_speed=0.25 z=8  change_sprite=true global.position_3_name=char}
 	}
 	if global.chars>3{
-	if race_position=1{x=obj_podium_pos1.x y=obj_podium_pos1.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_victory} image_speed=0.25 z=12 change_sprite=true global.position_1_name=char}
-	if race_position=2{x=obj_podium_pos2.x y=obj_podium_pos2.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_victory} image_speed=0.25 z=8  change_sprite=true global.position_2_name=char}
-	if race_position=3{x=obj_podium_pos3.x y=obj_podium_pos3.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_victory} image_speed=0.25 z=8  change_sprite=true global.position_3_name=char}
-	if race_position=4{x=obj_podium_pos4.x y=obj_podium_pos4.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_defeat}  image_speed=0.25 z=0  change_sprite=true global.position_4_name=char}
-	if race_position=5{x=obj_podium_pos5.x y=obj_podium_pos5.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_defeat}  image_speed=0.25 z=0  change_sprite=true global.position_5_name=char}
-	if race_position=6{x=obj_podium_pos6.x y=obj_podium_pos6.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_defeat}  image_speed=0.25 z=0  change_sprite=true global.position_6_name=char}
+	if race_position == 1 {x=obj_podium_pos1.x y=obj_podium_pos1.y speed=0 direction=0 path_speed=0 if change_sprite==false{final_sprite=mdlspr_victory} image_speed=0.25 z=12 change_sprite=true global.position_1_name=char}
+	if race_position == 2 {x=obj_podium_pos2.x y=obj_podium_pos2.y speed=0 direction=0 path_speed=0 if change_sprite==false{final_sprite=mdlspr_victory} image_speed=0.25 z=8  change_sprite=true global.position_2_name=char}
+	if race_position == 3 {x=obj_podium_pos3.x y=obj_podium_pos3.y speed=0 direction=0 path_speed=0 if change_sprite==false{final_sprite=mdlspr_victory} image_speed=0.25 z=8  change_sprite=true global.position_3_name=char}
+	if race_position == 4 {x=obj_podium_pos4.x y=obj_podium_pos4.y speed=0 direction=0 path_speed=0 if change_sprite==false{final_sprite=mdlspr_defeat}  image_speed=0.25 z=0  change_sprite=true global.position_4_name=char}
+	if race_position == 5 {x=obj_podium_pos5.x y=obj_podium_pos5.y speed=0 direction=0 path_speed=0 if change_sprite==false{final_sprite=mdlspr_defeat}  image_speed=0.25 z=0  change_sprite=true global.position_5_name=char}
+	if race_position == 6 {x=obj_podium_pos6.x y=obj_podium_pos6.y speed=0 direction=0 path_speed=0 if change_sprite==false{final_sprite=mdlspr_defeat}  image_speed=0.25 z=0  change_sprite=true global.position_6_name=char}
 	}
 	}
 
@@ -186,7 +200,7 @@ function scr_kartsettings() {
 	fx_timer-=4
 	if fx_timer<=0{
 
-	if bot=false{
+	if bot==false{
 	if speed!=0{
 	if drifting=true{fx=instance_create(x,y,obj_racefx) fx.target=id fx.direction=direction fx.speed=speed/1.15 fx.friction=0.1}
 	if collision_point(x,y,obj_floor_vines_ruins,1,1) 
@@ -205,9 +219,9 @@ function scr_kartsettings() {
 	fx_timer=40
 	}}
 
-	if bot=true{
+	if bot==true{
 		if path_speed!=0{
-			final_sprite=mdlspr_up
+			//final_sprite=mdlspr_up
 			if drifting=true{fx=instance_create(x,y,obj_racefx) fx.target=id fx.direction=direction fx.speed=speed/1.15 fx.friction=0.1}
 			if collision_point(x,y,obj_floor_vines_ruins,1,1) 
 			or collision_point(x,y,obj_floor_leaves_ruins,1,1) 
@@ -239,7 +253,7 @@ function scr_kartsettings() {
 	
 
 	//Achivement Tracking
-	if bot=false{
+	if bot==false{
 
 	if char="Papyrus"{
 	if powerup="G. Blaster"{

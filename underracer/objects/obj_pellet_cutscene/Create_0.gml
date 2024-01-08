@@ -3,6 +3,7 @@ camsin=0
 camcos=0
 cam=0
 stun=false
+//change_sprite=false;
 modelsprite=spr_pellet
 image_speed=0.5
 DX = 0; // When this value is positive, the tip is right to the origin.

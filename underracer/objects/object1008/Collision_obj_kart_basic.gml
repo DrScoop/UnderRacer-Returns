@@ -1,7 +1,9 @@
 sound_2play(snd_lapcomplete)
 other.x+=48
 other.lap+=1
-other.bot_pathstart=true
+if !global.racewon {
+	other.bot_pathstart=true
+}
 
 if other.lap=global.lap_limit+1{
 position+=1
