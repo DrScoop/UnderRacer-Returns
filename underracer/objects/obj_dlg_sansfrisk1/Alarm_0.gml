@@ -1,5 +1,7 @@
+var _d = depth;
+
 if dialogue=1{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_sans_normal
@@ -11,7 +13,7 @@ writer_msg(
 
 if dialogue=2{
 if obj_kart_frisk.direction<95 and obj_kart_frisk.direction>85{
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_sans_normal
@@ -27,7 +29,7 @@ alarm[0]=1;
 }}
 
 if dialogue=3{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_sans_normal
@@ -38,7 +40,7 @@ writer_msg(
 }}
 
 if dialogue=4{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_sans_chuckle
@@ -49,7 +51,7 @@ writer_msg(
 }}
 
 if dialogue=5{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_sans_wink
@@ -60,7 +62,7 @@ writer_msg(
 }}
 
 if dialogue=6{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_sans_chuckle
@@ -71,7 +73,7 @@ writer_msg(
 }}
 
 if dialogue=7{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_sans_normal

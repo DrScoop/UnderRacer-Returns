@@ -1,6 +1,8 @@
+var _d = depth;
+
 if !sound_isplaying(snd_whoopee){
 if dialogue=1{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_sans_chuckle
@@ -11,7 +13,7 @@ writer_msg(
 }}
 
 if dialogue=2{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_sans_normal
@@ -22,7 +24,7 @@ writer_msg(
 }}  
 
 if dialogue=3{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_sans_normal
@@ -33,7 +35,7 @@ writer_msg(
 }}
 
 if dialogue=4{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_sans_chuckle
@@ -44,7 +46,7 @@ writer_msg(
 }}
 
 if dialogue=5{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_sans_normal
@@ -55,7 +57,7 @@ writer_msg(
 }}
 
 if dialogue=6{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_sans_normal
@@ -66,7 +68,7 @@ writer_msg(
 }}
 
 if dialogue=7{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_sans_normal
@@ -77,7 +79,7 @@ writer_msg(
 }}
 
 if dialogue=8{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_sans_normal
@@ -88,7 +90,7 @@ writer_msg(
 }}
 
 if dialogue=9{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_sans_chuckle
@@ -99,7 +101,7 @@ writer_msg(
 }}
 
 if dialogue=10{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_sans_normal
@@ -110,7 +112,7 @@ writer_msg(
 }}
 
 if dialogue=11{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_sans_normal
@@ -121,7 +123,7 @@ writer_msg(
 }}
 
 if dialogue=12{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_sans_normal
@@ -132,7 +134,7 @@ writer_msg(
 }}
 
 if dialogue=13{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_sans_normal

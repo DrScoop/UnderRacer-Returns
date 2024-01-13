@@ -1,5 +1,7 @@
+var _d = depth;
+
 if dialogue=1{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 spriteface=spr_dlg_flowey_evil
 with dlg
 {
@@ -12,7 +14,7 @@ writer_msg(
 }}
 
 if dialogue=2{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 spriteface=spr_dlg_flowey_worried
 with dlg
 {

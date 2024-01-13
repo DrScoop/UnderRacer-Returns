@@ -1,5 +1,7 @@
+var _d = depth;
+
 if dialogue=1{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_sans_normal
@@ -24,7 +26,7 @@ with obj_kart_papyrus
 
 if(obj_kart_papyrus.y <= 392)
 {
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_sans_normal
@@ -46,7 +48,7 @@ alarm[0]=1
 }}  
 
 if dialogue=3{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_papyrus_evil
@@ -57,7 +59,7 @@ writer_msg(
 }}
 
 if dialogue=4{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_papyrus_evil
@@ -68,7 +70,7 @@ writer_msg(
 }}
 
 if dialogue=5{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_papyrus_mad
@@ -79,7 +81,7 @@ writer_msg(
 }}
 
 if dialogue=6{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_papyrus_evil
@@ -90,7 +92,7 @@ writer_msg(
 }}
 
 if dialogue=7{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_papyrus_mad
@@ -101,7 +103,7 @@ writer_msg(
 }}
 
 if dialogue=8{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_sans_normal
@@ -112,7 +114,7 @@ writer_msg(
 }}
 
 if dialogue=9{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_papyrus_mad
@@ -123,7 +125,7 @@ writer_msg(
 }}
 
 if dialogue=10{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_papyrus_evil
@@ -134,7 +136,7 @@ writer_msg(
 }}
 
 if dialogue=11{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_papyrus_mad
@@ -145,7 +147,7 @@ writer_msg(
 }}
 
 if dialogue=12{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_papyrus_mad
@@ -156,7 +158,7 @@ writer_msg(
 }}
 
 if dialogue=13{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_papyrus_mad
@@ -167,7 +169,7 @@ writer_msg(
 }}
 
 if dialogue=14{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_papyrus_evil
@@ -178,7 +180,7 @@ writer_msg(
 }}
 
 if dialogue=15{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_papyrus_evil
@@ -189,7 +191,7 @@ writer_msg(
 }}
 
 if dialogue=16{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_papyrus_laugh
@@ -200,7 +202,7 @@ writer_msg(
 }}
 
 if dialogue=17{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_papyrus_laugh
@@ -211,7 +213,7 @@ writer_msg(
 }}
 
 if dialogue=18{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_papyrus_laugh
@@ -222,7 +224,7 @@ writer_msg(
 }}
 
 if dialogue=19{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_papyrus_laugh
@@ -233,7 +235,7 @@ writer_msg(
 }}
 
 if dialogue=20{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_sans_normal
@@ -244,7 +246,7 @@ writer_msg(
 }}
 
 if dialogue=21{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_sans_chuckle
@@ -255,7 +257,7 @@ writer_msg(
 }}
 
 if dialogue=22{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_papyrus_mad
@@ -266,7 +268,7 @@ writer_msg(
 }}
 
 if dialogue=23{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_papyrus_mad
@@ -277,7 +279,7 @@ writer_msg(
 }}
 
 if dialogue=24{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_papyrus_evil
@@ -288,7 +290,7 @@ writer_msg(
 }}
 
 if dialogue=25{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_sans_normal
@@ -299,7 +301,7 @@ writer_msg(
 }}
 
 if dialogue=26{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_sans_wink
@@ -310,7 +312,7 @@ writer_msg(
 }}
 
 if dialogue=27{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_papyrus_mad
@@ -321,7 +323,7 @@ writer_msg(
 }}
 
 if dialogue=28{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_sans_chuckle
@@ -332,7 +334,7 @@ writer_msg(
 }}
 
 if dialogue=29{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_papyrus_mad
@@ -343,7 +345,7 @@ writer_msg(
 }}
 
 if dialogue=30{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_papyrus_side
@@ -354,7 +356,7 @@ writer_msg(
 }}
 
 if dialogue=31{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_papyrus_evil
@@ -365,7 +367,7 @@ writer_msg(
 }}
 
 if dialogue=32{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_papyrus_evil
@@ -376,7 +378,7 @@ writer_msg(
 }}
 
 if dialogue=33{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_sans_normal
@@ -387,7 +389,7 @@ writer_msg(
 }}
 
 if dialogue=34{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_sans_wink
@@ -398,7 +400,7 @@ writer_msg(
 }}
 
 if dialogue=35{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_papyrus_mad
@@ -409,7 +411,7 @@ writer_msg(
 }}
 
 if dialogue=36{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_papyrus_evil
@@ -420,7 +422,7 @@ writer_msg(
 }}
 
 if dialogue=37{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_papyrus_mad
@@ -431,7 +433,7 @@ writer_msg(
 }}
 
 if dialogue=38{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_papyrus_evil
@@ -442,7 +444,7 @@ writer_msg(
 }}
 
 if dialogue=39{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_papyrus_mad
@@ -453,7 +455,7 @@ writer_msg(
 }}
 
 if dialogue=40{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_papyrus_laugh
@@ -470,7 +472,7 @@ with obj_kart_papyrus {path_end()}
 obj_kart_papyrus.direction = 90
 obj_kart_papyrus.speed = 0
 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_papyrus_laugh
@@ -490,7 +492,7 @@ alarm[0]=1;
 
 if dialogue=42{ 
 if !instance_exists(obj_kart_papyrus){
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 spriteface=spr_dlg_sans_normal

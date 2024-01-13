@@ -26,7 +26,7 @@ function scr_kartsettings() {
 			if bot=false{
 				if player=1{
 					if keyboard_check(global.control_pl1cam_kb) or gamepad_button_check(0,global.control_pl1cam_jk){final_sprite=mdlspr_down_look looktimer-=2.5 camobj.adddir=180 camobj.DX = -40}
-					if keyboard_check_released(global.control_pl1cam_kb) or gamepad_button_check_released(1,global.control_pl1cam_jk){final_sprite=mdlspr_up camobj.adddir=0 camobj.DX = -20 looktimer=20}
+					if keyboard_check_released(global.control_pl1cam_kb) or gamepad_button_check_released(0,global.control_pl1cam_jk){final_sprite=mdlspr_up camobj.adddir=0 camobj.DX = -20 looktimer=20}
 				}
 				if player=2{
 					if keyboard_check(global.control_pl2cam_kb) or gamepad_button_check(2,global.control_pl2cam_jk){final_sprite=mdlspr_down_look looktimer-=2.5 camobj.adddir=180 camobj.DX = -40}

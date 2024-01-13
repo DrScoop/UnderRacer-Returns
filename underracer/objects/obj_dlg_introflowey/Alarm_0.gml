@@ -1,5 +1,5 @@
 if dialogue=1{ 
-	dlg=instance_create(x,y,obj_writer);
+	dlg=instance_create_depth(x,y,-201,obj_writer);
 	spriteface=spr_dlg_flowey_normal
 	with dlg
 	{
@@ -10,7 +10,7 @@ if dialogue=1{
 }
 
 if dialogue=2{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 spriteface=spr_dlg_flowey_normal
 with dlg
 {
@@ -20,7 +20,7 @@ writer_msg(
 }}  
 
 if dialogue=3{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 spriteface=spr_dlg_flowey_normal
 with dlg
 {
@@ -30,7 +30,7 @@ writer_msg(
 }}
 
 if dialogue=4{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 spriteface=spr_dlg_flowey_normal
 with dlg
 {
@@ -40,13 +40,13 @@ writer_msg(
 }}
 
 if dialogue=5{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 spriteface=spr_dlg_flowey_normal
 with dlg
 {
 txtsound=snd_talk_flowey
 writer_msg(
-"* I guess little old me&will have to do.&*Ready? Here we go!")
+"* I guess little old me&will have to do.&* Ready? Here we go!")
 }}
 
 if dialogue>dialoguemax{instance_destroy()}
