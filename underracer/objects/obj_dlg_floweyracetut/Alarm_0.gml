@@ -5,7 +5,7 @@ with dlg
 {
 txtsound=snd_talk_flowey
 writer_msg(
-"\\W*This is a \\YKART\\W.&It's your main means&of transportation&and your \\RWEAPON\\W./")
+"\\W*This is a \\YKART\\W.&It's your main means&of transportation&and your \\RWEAPON\\W.")
 }}
 
 if dialogue=2{ 
@@ -15,7 +15,7 @@ with dlg
 {
 txtsound=snd_talk_flowey
 writer_msg(
-"\\W*How does it work?&*Easy! \\YSOUL POWER\\W!/")
+"\\W*How does it work?&*Easy! \\YSOUL POWER\\W!")
 }}  
 
 if dialogue=3{ 
@@ -25,7 +25,7 @@ with dlg
 {
 txtsound=snd_talk_flowey
 writer_msg(
-"*You don't need&anything else! Except for&one thing, maybe.&*Items!/")
+"*You don't need&anything else! Except for&one thing, maybe.&*Items!")
 }}
 
 if dialogue=4{ 
@@ -79,7 +79,7 @@ with dlg
 {
 txtsound=snd_talk_flowey
 writer_msg(
-"\\W*...Hey, how about a&*\\YQUICK RACE\\W?&*Just follow me!/")
+"\\W*...Hey, how about a&*\\YQUICK RACE\\W?&*Just follow me!")
 }}
 
 if dialogue=9{ 

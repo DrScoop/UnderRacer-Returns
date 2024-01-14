@@ -1,2 +1,2 @@
-scr_dialoguebox_draw()
+scr_dialoguebox_draw();
 

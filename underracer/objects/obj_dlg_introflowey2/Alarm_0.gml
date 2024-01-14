@@ -5,7 +5,7 @@ with dlg
 {
 txtsound=snd_talk_flowey
 writer_msg(
-"*Hello again!&I guess i don't need&to introduce myself&again, do i?/")
+"* Hello again!&I guess I don't need&to introduce myself&again, do i?")
 }}
 
 if dialogue=2{ 
@@ -15,7 +15,7 @@ with dlg
 {
 txtsound=snd_talk_flowey
 writer_msg(
-"*Just follow me, buddy./")
+"* Just follow me, buddy.")
 }}  
 
 if dialogue>dialoguemax{instance_destroy()}

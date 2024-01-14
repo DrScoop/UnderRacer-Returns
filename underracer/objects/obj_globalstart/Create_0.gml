@@ -41,6 +41,7 @@ global.lvlsong=global.snd_ruins
 global.dialogue=false
 global.start_speed=0
 global.whatgrav=20
+global.cmpn_room = rm_cmpgn_tutorial1;
 global.cmpn_showlaplimit=false
 global.roomname="Bepis"
 global.preview_charname=""

@@ -5,7 +5,7 @@ with dlg
 {
 txtsound=snd_talk_flowey
 writer_msg(
-"*Heheh, you really thought&we were going to do&this all again?")
+"* Heheh, you really thought&we were going to do&this all again?")
 }}
 
 if dialogue=2{ 
@@ -15,7 +15,7 @@ with dlg
 {
 txtsound=snd_talk_flowey
 writer_msg(
-"*Don't you think i've&learned from my&mistakes?/")
+"* Don't you think i've&learned from my&mistakes?")
 }}  
 
 if dialogue=3{ 
@@ -26,7 +26,7 @@ with dlg
 {
 txtsound=snd_talk_flowey_evil
 writer_msg(
-"*I know who you are.")
+"* I know who you are.")
 }}
 
 if dialogue=4{ 
@@ -36,7 +36,7 @@ with dlg
 {
 txtsound=snd_talk_flowey_evil
 writer_msg(
-"*I know what you did./")
+"* I know what you did.")
 }}
 
 if dialogue=5{ 
@@ -46,7 +46,7 @@ with dlg
 {
 txtsound=snd_talk_flowey_evil
 writer_msg(
-"*I know what you are&capable of./")
+"* I know what you are&capable of.")
 }}
 
 if dialogue=6{ 
@@ -56,7 +56,7 @@ with dlg
 {
 txtsound=snd_talk_flowey
 writer_msg(
-"*This world you are&about to enter.../")
+"* This world you are&about to enter...")
 }}
 
 if dialogue=7{ 
@@ -76,7 +76,7 @@ with dlg
 {
 txtsound=snd_talk_flowey
 writer_msg(
-"*Those who you thought&were friends.../")
+"* Those who you thought&were friends...")
 }}
 
 if dialogue=9{ 
@@ -86,7 +86,7 @@ with dlg
 {
 txtsound=snd_talk_flowey
 writer_msg(
-"*They don't know who you&are. You're a stranger./")
+"* They don't know who you&are. You're a stranger.")
 }}
 
 if dialogue=10{ 
@@ -96,7 +96,7 @@ with dlg
 {
 txtsound=snd_talk_flowey_evil
 writer_msg(
-"*All your sins, past,&present or future, will be&shown for all to see.../")
+"* All your sins, past,&present or future, will be&shown for all to see...")
 }}
 
 if dialogue=11{ 
@@ -106,7 +106,7 @@ with dlg
 {
 txtsound=snd_talk_flowey_evil
 writer_msg(
-"*And then?/")
+"* And then?")
 }}
 
 if dialogue=12{ 
@@ -116,7 +116,7 @@ with dlg
 {
 txtsound=snd_talk_flowey_evil
 writer_msg(
-"\\R*YOU'LL JUST END UP&LIKE THE OTHERS.\\W/")
+"\\R* YOU'LL JUST END UP&LIKE THE OTHERS.\\W/")
 }}
 
 

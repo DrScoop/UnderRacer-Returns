@@ -11,7 +11,7 @@ with dlg
 {
 txtsound=snd_talk_flowey
 writer_msg(
-"*One last thing./")
+"* One last thing.")
 }}
 
 if dialogue=2{ 
@@ -21,7 +21,7 @@ with dlg
 {
 txtsound=snd_talk_flowey
 writer_msg(
-"*Don't think you'll&get your happy ending&as easy as last time./")
+"* Don't think you'll&get your happy ending&as easy as last time.")
 }}  
 
 if dialogue=3{ 
