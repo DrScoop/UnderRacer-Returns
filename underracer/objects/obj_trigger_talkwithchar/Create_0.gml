@@ -5,6 +5,9 @@ cam=0
 stun=false
 image_speed=0.25
 modelsprite=spr_actfx
+
+change_sprite = noone;
+
 //dlgobj1 = noone;
 //dlgobj2 = noone;
 //dlgobj3 = noone;

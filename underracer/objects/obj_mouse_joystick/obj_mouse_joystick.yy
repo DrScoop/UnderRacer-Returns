@@ -34,5 +34,5 @@
     "path": "sprites/spr_heartmouse/spr_heartmouse.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

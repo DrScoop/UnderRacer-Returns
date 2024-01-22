@@ -1,5 +1,7 @@
+var _d = depth;
+
 if dialogue=1{
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 spriteface=spr_dlg_flowey_sarcastic
 with dlg
 {
@@ -9,18 +11,18 @@ writer_msg(
 }}
 
 if dialogue=2{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 spriteface=spr_dlg_flowey_mad
 with dlg
 {
 txtsound=snd_talk_flowey
 writer_msg(
-"* Don't you think i've&learned from my&mistakes?")
+"* Don't you think i've&learned from my&mistakes?/")
 }}  
 
 if dialogue=3{ 
 if instance_exists(obj_kart_flowey){with obj_kart_flowey{final_sprite=spr_kflowey_evil change_sprite=true}}
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 spriteface=spr_dlg_flowey_evil
 with dlg
 {
@@ -30,7 +32,7 @@ writer_msg(
 }}
 
 if dialogue=4{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 spriteface=spr_dlg_flowey_evil
 with dlg
 {
@@ -40,37 +42,37 @@ writer_msg(
 }}
 
 if dialogue=5{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 spriteface=spr_dlg_flowey_evil
 with dlg
 {
 txtsound=snd_talk_flowey_evil
 writer_msg(
-"* I know what you are&capable of.")
+"* I know what you are&capable of./")
 }}
 
 if dialogue=6{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 spriteface=spr_dlg_flowey_sarcastic
 with dlg
 {
 txtsound=snd_talk_flowey
 writer_msg(
-"* This world you are&about to enter...")
+"*This world you are&about to enter...")
 }}
 
 if dialogue=7{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 spriteface=spr_dlg_flowey_sarcastic
 with dlg
 {
 txtsound=snd_talk_flowey
 writer_msg(
-"*It's not like the others./")
+"* It's not like the others.")
 }}
 
 if dialogue=8{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 spriteface=spr_dlg_flowey_normal
 with dlg
 {
@@ -80,7 +82,7 @@ writer_msg(
 }}
 
 if dialogue=9{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 spriteface=spr_dlg_flowey_normal
 with dlg
 {
@@ -90,7 +92,7 @@ writer_msg(
 }}
 
 if dialogue=10{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 spriteface=spr_dlg_flowey_evil
 with dlg
 {
@@ -100,7 +102,7 @@ writer_msg(
 }}
 
 if dialogue=11{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 spriteface=spr_dlg_flowey_evil
 with dlg
 {
@@ -110,13 +112,13 @@ writer_msg(
 }}
 
 if dialogue=12{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 spriteface=spr_dlg_flowey_evil
 with dlg
 {
 txtsound=snd_talk_flowey_evil
 writer_msg(
-"\\R* YOU'LL JUST END UP&LIKE THE OTHERS.\\W/")
+"\\R* YOU'LL JUST END UP&LIKE THE OTHERS.\\W")
 }}
 
 

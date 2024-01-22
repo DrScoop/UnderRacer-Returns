@@ -1,5 +1,7 @@
+var _d = depth;
+
 if dialogue=1{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 if !sound_isplaying(global.snd_papyrus){sound_2loop(global.snd_papyrus)}
 with dlg
 {
@@ -11,7 +13,7 @@ writer_msg(
 }}  
 
 if dialogue=2{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 if !sound_isplaying(global.snd_papyrus){sound_2loop(global.snd_papyrus)}
 with dlg
 {
@@ -23,7 +25,7 @@ writer_msg(
 }}  
 
 if dialogue=3{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 if !sound_isplaying(global.snd_papyrus){sound_2loop(global.snd_papyrus)}
 with dlg
 {
@@ -35,7 +37,7 @@ writer_msg(
 }}  
 
 if dialogue=4{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 if !sound_isplaying(global.snd_papyrus){sound_2loop(global.snd_papyrus)}
 with dlg
 {
@@ -47,7 +49,7 @@ writer_msg(
 }}  
 
 if dialogue=5{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 if !sound_isplaying(global.snd_papyrus){sound_2loop(global.snd_papyrus)}
 with dlg
 {
@@ -59,7 +61,7 @@ writer_msg(
 }}  
 
 if dialogue=6{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 if !sound_isplaying(global.snd_papyrus){sound_2loop(global.snd_papyrus)}
 with dlg
 {

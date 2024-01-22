@@ -1,5 +1,7 @@
+var _d = depth;
+
 if dialogue=1{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 writingx = 16;
@@ -11,7 +13,7 @@ writer_msg(
 }}
 
 if dialogue=2{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 writingx = 16;
@@ -23,7 +25,7 @@ writer_msg(
 }}  
 
 if dialogue=3{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 writingx = 16;
@@ -35,7 +37,7 @@ writer_msg(
 }}
 
 if dialogue=4{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 with dlg
 {
 writingx = 16;

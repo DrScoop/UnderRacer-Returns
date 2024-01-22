@@ -5,7 +5,7 @@ obj_kart_flowey.final_sprite=spr_kflowey_emerge
 obj_kart_flowey.image_speed=0.5
 obj_kart_flowey.speed=0
 }
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 spriteface=spr_dlg_flowey_sarcastic
 with dlg
 {
@@ -15,7 +15,7 @@ writer_msg(
 }}
 
 if dialogue=2{ 
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 spriteface=spr_dlg_flowey_mad
 with dlg
 {
@@ -26,7 +26,7 @@ writer_msg(
 
 if dialogue=3{ 
 if instance_exists(obj_kart_flowey){with obj_kart_flowey{final_sprite=spr_kflowey_evil change_sprite=true}}
-dlg=instance_create(x,y,obj_writer);
+dlg=instance_create_depth(x,y,-201,obj_writer);
 spriteface=spr_dlg_flowey_evil
 with dlg
 {
